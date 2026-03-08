@@ -35,71 +35,74 @@ def _ensure_chunks_exist() -> None:
 
 
 def inject_custom_css():
-    """Responsive, mobile-friendly CSS; bot left, user right; improved icons."""
+    """Chatbot-style UI: chat bubbles, spacing, modern look."""
     st.markdown("""
     <style>
-    /* Container: comfortable width on desktop, full width on mobile */
+    /* Chatbot container: centered, readable width */
     .block-container {
-        max-width: 42rem;
-        padding-top: 1.5rem;
-        padding-bottom: 2rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        max-width: 36rem;
+        padding-top: 1rem;
+        padding-bottom: 6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     @media (min-width: 640px) {
-        .block-container { padding-left: 2rem; padding-right: 2rem; }
+        .block-container { padding-left: 1.5rem; padding-right: 1.5rem; }
     }
-    /* Sticky header: Groww MF title, caption, welcome, and example buttons stay visible when scrolling */
-    .block-container > div:nth-child(-n+8) {
+    /* Sticky header: title + caption only */
+    .block-container > div:nth-child(-n+2) {
         position: sticky !important;
         top: 0 !important;
         z-index: 100 !important;
         background: #ffffff !important;
-        padding-bottom: 0.25rem !important;
+        padding-bottom: 0.5rem !important;
         box-shadow: 0 1px 0 rgba(0,0,0,0.06) !important;
     }
-    [data-theme="dark"] .block-container > div:nth-child(-n+8),
-    [data-theme="Dark"] .block-container > div:nth-child(-n+8) {
+    [data-theme="dark"] .block-container > div:nth-child(-n+2),
+    [data-theme="Dark"] .block-container > div:nth-child(-n+2) {
         background: var(--background-color) !important;
         box-shadow: 0 1px 0 rgba(255,255,255,0.08) !important;
     }
-    /* Chat row: bot on left, user on right */
+    /* Chat message row: clear separation, chatbot feel */
     [data-testid="stChatMessage"] {
-        padding: 0.5rem 0;
+        padding: 0.4rem 0;
         display: flex;
         align-items: flex-start;
         width: 100%;
+        margin-bottom: 0.5rem;
     }
-    /* Bot (assistant) on the left: avatar left, message right of avatar */
+    /* Bot message: card-style bubble on the left */
     div[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {
         flex-direction: row;
         justify-content: flex-start;
         align-self: flex-start;
-        background: #fafafa !important;
-        border-radius: 1rem;
-        border: 1px solid #e0e0e0;
-        padding: 0.75rem 1rem;
-        margin: 0.5rem 0 0.5rem 0;
-        max-width: 85%;
+        background: #f8f9fc !important;
+        border-radius: 1.25rem 1.25rem 1.25rem 0.25rem !important;
+        border: 1px solid #e8eaef !important;
+        padding: 0.85rem 1rem !important;
+        margin: 0.35rem 0 !important;
+        max-width: 88%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.04) !important;
     }
-    /* User on the right: whole block pushed right, avatar left of bubble */
+    /* User message: bubble on the right */
     div[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) {
         flex-direction: row;
         justify-content: flex-end;
         align-self: flex-end;
         margin-left: auto;
-        max-width: 85%;
+        max-width: 88%;
     }
-    /* User question bubble: soft blue, stays right-aligned */
+    /* User bubble: Groww blue tint, rounded */
     .user-question-bubble {
-        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-        border: 1px solid #90caf9;
-        border-radius: 0.75rem;
-        padding: 0.75rem 1rem;
-        margin: 0.25rem 0;
-        color: #1565c0;
-        font-size: 1rem;
-        line-height: 1.5;
+        background: linear-gradient(135deg, #6A7DDF 0%, #5a6bc9 100%) !important;
+        border: none !important;
+        border-radius: 1.25rem 1.25rem 0.25rem 1.25rem !important;
+        padding: 0.75rem 1rem !important;
+        margin: 0.25rem 0 !important;
+        color: #ffffff !important;
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        box-shadow: 0 1px 3px rgba(106, 125, 223, 0.3) !important;
     }
     /* Avatars: circular, Groww-style */
     [data-testid="stChatMessage"] [data-testid="chatAvatarIcon-user"],
@@ -148,20 +151,23 @@ def inject_custom_css():
     @media (min-width: 640px) {
         .stButton > button { width: 100%; max-width: 100%; }
     }
-    /* Chat input: soft gray border (no red/alert look); blue on focus */
+    /* Chat input: chatbot-style input bar */
     div[data-testid="stChatInput"] {
-        border: 1px solid #b0bec5 !important;
-        box-shadow: none !important;
+        border: 1px solid #6A7DDF !important;
+        border-radius: 1.5rem !important;
+        box-shadow: 0 2px 8px rgba(106, 125, 223, 0.15) !important;
+        background: #ffffff !important;
     }
     div[data-testid="stChatInput"]:focus-within {
-        border-color: #90caf9 !important;
-        box-shadow: 0 0 0 1px rgba(144, 202, 249, 0.3) !important;
+        border-color: #6AEBAF !important;
+        box-shadow: 0 2px 12px rgba(106, 235, 175, 0.2) !important;
     }
     [data-testid="stChatInput"] textarea {
         min-height: 2.75rem;
-        font-size: 1rem;
+        font-size: 0.95rem;
         border: none !important;
         box-shadow: none !important;
+        padding: 0.5rem 1rem !important;
     }
     [data-testid="stChatInput"] textarea:focus {
         border: none !important;
@@ -171,7 +177,11 @@ def inject_custom_css():
     .stAlert {
         border-radius: 0.5rem;
     }
-    /* Spacing for answer block */
+    /* Assistant message text: readable */
+    div[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) [data-testid="stMarkdown"] {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
     .answer-block {
         padding: 0.75rem 0;
     }
@@ -196,11 +206,14 @@ def inject_custom_css():
         color: #b0b0b0;
     }
 
-    /* ========== Dark mode: dark blue bubbles for questions and answers ========== */
+    /* ========== Dark mode ========== */
     [data-theme="dark"] .user-question-bubble {
-        background: #0d47a1 !important;
-        border-color: #0a3d91 !important;
-        color: #ffffff !important;
+        background: linear-gradient(135deg, #2d3a7b 0%, #1a2260 100%) !important;
+        color: #e3f2fd !important;
+    }
+    [data-theme="Dark"] .user-question-bubble {
+        background: linear-gradient(135deg, #2d3a7b 0%, #1a2260 100%) !important;
+        color: #e3f2fd !important;
     }
     /* Bot/assistant message bubble: dark blue-gray (no white boxes) */
     [data-theme="dark"] div[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {
@@ -231,12 +244,7 @@ def inject_custom_css():
     [data-theme="dark"] [data-testid="stChatMessage"] [data-testid="stMarkdown"] p {
         color: #e3f2fd !important;
     }
-    /* Fallback: Streamlit may use "Dark" or "Light" (capital D/L) */
-    [data-theme="Dark"] .user-question-bubble {
-        background: #0d47a1 !important;
-        border-color: #0a3d91 !important;
-        color: #ffffff !important;
-    }
+    /* Fallback: Streamlit may use "Dark" (capital D) */
     [data-theme="Dark"] div[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {
         background: #1e3a5f !important;
         border-color: #1565c0 !important;
@@ -350,7 +358,7 @@ def main():
 
     welcome = (
         "Hi! I'm **Groww MF**. Ask me anything about these mutual fund schemes—"
-        "expense ratios, minimum SIP, riskometer, and more."
+        "expense ratios, minimum SIP, one-time SIP, riskometer, and more."
     )
     st.info(welcome)
 
@@ -362,10 +370,12 @@ def main():
     if "scroll_to_latest" not in st.session_state:
         st.session_state.scroll_to_latest = False
 
+    st.markdown("**Suggested questions**")
     example_queries = [
         "Expense ratio of HDFC Silver ETF FoF?",
         "Minimum SIP for SBI Gold Fund?",
         "What is Riskometer?",
+        "Min one-time SIP for HDFC Silver?",
     ]
     for q in example_queries:
         if st.button(q, key=q):
@@ -428,6 +438,11 @@ def main():
 
     # Render full chat history in the chat area
     messages = st.session_state.messages
+    if not messages:
+        st.markdown(
+            '<p style="color:#666; font-size:0.9rem; margin:1rem 0;">Type or tap a question below to get started.</p>',
+            unsafe_allow_html=True,
+        )
     for idx, msg in enumerate(messages):
         if msg["role"] == "user":
             with st.chat_message("user"):
