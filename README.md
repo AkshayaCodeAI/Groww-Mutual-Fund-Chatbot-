@@ -105,10 +105,15 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) and [phase6/DEPLOYMENT.md](phas
 Question Asked 
 
 What is the investment objective of HDFC Silver ETF FoF Direct Growth?
+
 What are the latest NAV and 3-year returns of this fund?
+
 What level of risk is associated with this silver-based fund?
+
 What is the minimum SIP or lump-sum investment required?
+
 What assets does this fund primarily invest in?
+
 Who is the fund manager and what is the expense ratio of this scheme?
 
 
