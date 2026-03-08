@@ -113,7 +113,7 @@ def inject_custom_css():
     [data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) [data-testid="chatAvatarIcon-assistant"] img {
         filter: brightness(0) invert(1);
     }
-    /* Example buttons: touch-friendly on mobile */
+    /* Example question buttons: theme-aware (light / dark / custom) */
     .stButton > button {
         width: 100%;
         min-height: 2.75rem;
@@ -122,12 +122,14 @@ def inject_custom_css():
         border-radius: 0.5rem;
         margin-bottom: 0.5rem;
         text-align: left;
-        border: 1px solid #e0e0e0;
-        background: #fafafa;
+        border: 1px solid #6A7DDF;
+        background: #e8ecfc;
+        color: #2d3a7b;
     }
     .stButton > button:hover {
-        background: #e3f2fd;
-        border-color: #90caf9;
+        background: #d4dcf7;
+        border-color: #6A7DDF;
+        color: #1a2260;
     }
     @media (min-width: 640px) {
         .stButton > button { width: 100%; max-width: 100%; }
@@ -192,13 +194,13 @@ def inject_custom_css():
         border-color: #1565c0 !important;
     }
     [data-theme="dark"] .stButton > button {
-        color: #e8e8e8 !important;
-        background: #1e3a5f !important;
-        border-color: #1565c0 !important;
+        color: #e3f2fd !important;
+        background: #2d3a7b !important;
+        border-color: #6A7DDF !important;
     }
     [data-theme="dark"] .stButton > button:hover {
-        background: #0d47a1 !important;
-        border-color: #90caf9 !important;
+        background: #3d4d9a !important;
+        border-color: #6AEBAF !important;
         color: #ffffff !important;
     }
     [data-theme="dark"] [data-testid="stChatInput"],
@@ -215,7 +217,7 @@ def inject_custom_css():
     [data-theme="dark"] [data-testid="stChatMessage"] [data-testid="stMarkdown"] p {
         color: #e3f2fd !important;
     }
-    /* Fallback: Streamlit may use "Dark" (capital D) */
+    /* Fallback: Streamlit may use "Dark" or "Light" (capital D/L) */
     [data-theme="Dark"] .user-question-bubble {
         background: #0d47a1 !important;
         border-color: #0a3d91 !important;
@@ -224,6 +226,29 @@ def inject_custom_css():
     [data-theme="Dark"] div[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {
         background: #1e3a5f !important;
         border-color: #1565c0 !important;
+    }
+    [data-theme="Dark"] .stButton > button {
+        color: #e3f2fd !important;
+        background: #2d3a7b !important;
+        border-color: #6A7DDF !important;
+    }
+    [data-theme="Dark"] .stButton > button:hover {
+        background: #3d4d9a !important;
+        border-color: #6AEBAF !important;
+        color: #ffffff !important;
+    }
+    /* Light theme (explicit for custom theme when set to light) */
+    [data-theme="light"] .stButton > button,
+    [data-theme="Light"] .stButton > button {
+        border: 1px solid #6A7DDF !important;
+        background: #e8ecfc !important;
+        color: #2d3a7b !important;
+    }
+    [data-theme="light"] .stButton > button:hover,
+    [data-theme="Light"] .stButton > button:hover {
+        background: #d4dcf7 !important;
+        border-color: #6A7DDF !important;
+        color: #1a2260 !important;
     }
     </style>
     """, unsafe_allow_html=True)
