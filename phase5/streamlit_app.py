@@ -38,30 +38,16 @@ def inject_custom_css():
     """Chatbot-style UI: chat bubbles, spacing, modern look."""
     st.markdown("""
     <style>
-    /* Chatbot container: centered, readable width; extra bottom space so "Ask a question" bar stays above Streamlit footer */
+    /* Chatbot container: centered, readable width; no sticky/fixed so scroll and input stay separate */
     .block-container {
         max-width: 36rem;
         padding-top: 1rem;
-        padding-bottom: 10rem;
+        padding-bottom: 2rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
     @media (min-width: 640px) {
         .block-container { padding-left: 1.5rem; padding-right: 1.5rem; }
-    }
-    /* Sticky header: title + caption only */
-    .block-container > div:nth-child(-n+2) {
-        position: sticky !important;
-        top: 0 !important;
-        z-index: 100 !important;
-        background: #ffffff !important;
-        padding-bottom: 0.5rem !important;
-        box-shadow: 0 1px 0 rgba(0,0,0,0.06) !important;
-    }
-    [data-theme="dark"] .block-container > div:nth-child(-n+2),
-    [data-theme="Dark"] .block-container > div:nth-child(-n+2) {
-        background: var(--background-color) !important;
-        box-shadow: 0 1px 0 rgba(255,255,255,0.08) !important;
     }
     /* Chat message row: clear separation, chatbot feel */
     [data-testid="stChatMessage"] {
@@ -185,23 +171,19 @@ def inject_custom_css():
     .answer-block {
         padding: 0.75rem 0;
     }
-    /* Hide Streamlit's "Manage app" footer so it doesn't overlap the chat input */
+    /* Hide Streamlit's "Manage app" footer for cleaner layout */
     footer { visibility: hidden !important; }
-    /* Optional: hide the footer's space so layout is clean (some Streamlit versions) */
     [data-testid="stFooter"] { display: none !important; }
-    /* Disclaimer at bottom */
+    /* Disclaimer: in-flow at bottom (no fixed position, so no overlap with chat input) */
     .disclaimer-below-chat {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
         text-align: center;
-        padding: 6px 16px;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
         font-size: 0.8rem;
         color: #666;
         background: #fafafa;
-        border-top: 1px solid #e8e8e8;
-        z-index: 999;
+        border-radius: 0.5rem;
+        border: 1px solid #e8e8e8;
     }
     [data-testid="stChatInput"] {
         margin-bottom: 0.5rem !important;
@@ -209,7 +191,7 @@ def inject_custom_css():
     [data-theme="dark"] .disclaimer-below-chat,
     [data-theme="Dark"] .disclaimer-below-chat {
         background: #1e3a5f;
-        border-top-color: #1565c0;
+        border-color: #1565c0;
         color: #b0b0b0;
     }
 
@@ -475,7 +457,7 @@ def main():
                 if msg.get("refused"):
                     st.caption("Facts only; no investment advice.")
 
-    # Disclaimer fixed below the "Ask a question" chat input
+    # Disclaimer in-flow at bottom (no fixed position)
     st.markdown(
         '<div class="disclaimer-below-chat">Facts only, no investment advice.</div>',
         unsafe_allow_html=True,
