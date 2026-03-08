@@ -1,0 +1,463 @@
+{
+  "scheme_id": "hdfc-mid-cap-fund-direct-growth",
+  "scheme_name": "HDFC Mid Cap Fund Direct Growth",
+  "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+  "last_updated": "2026-03-08",
+  "type": "Direct",
+  "expense_ratio": "0.76%",
+  "exit_load": "Exit load of 1% if redeemed within 1 year.",
+  "min_sip": "₹100",
+  "min_lumpsum": "₹100",
+  "lock_in_period": "3 years (ELSS lock-in)",
+  "benchmark": "NIFTY Midcap 150 Total Return Index Scheme Information Document(SID) Fund house HDFC Mutual Fund Rank (total assets) #2 in India Total AUM ₹9,37,232.21 Cr Date of Incorporation 10 Dec 1999 Phone 022 –",
+  "risk": "Very High risk",
+  "fund_manager": [
+    "Chirag Setalvad",
+    "Dhruv Muchhal"
+  ],
+  "launch_date": "10 Dec 1999",
+  "category": "Equity Mid Cap",
+  "scheme_type": null,
+  "asset_allocation": "Equity/Debt/Others as per holdings table. Top holdings: 1 year +1.31%; 3 years +22.25%; 5 years +61.57%; 10 years +181.88%; Max Financial Services Ltd. 4.51%",
+  "top_holdings": [
+    {
+      "name": "1 year",
+      "assets": "+1.31%",
+      "sector": "₹60,000"
+    },
+    {
+      "name": "3 years",
+      "assets": "+22.25%",
+      "sector": "₹1,80,000"
+    },
+    {
+      "name": "5 years",
+      "assets": "+61.57%",
+      "sector": "₹3,00,000"
+    },
+    {
+      "name": "10 years",
+      "assets": "+181.88%",
+      "sector": "₹6,00,000"
+    },
+    {
+      "name": "Max Financial Services Ltd.",
+      "assets": "4.51%",
+      "sector": "Financial"
+    },
+    {
+      "name": "AU Small Finance Bank Ltd.",
+      "assets": "4.19%",
+      "sector": "Financial"
+    },
+    {
+      "name": "The Federal Bank Ltd.",
+      "assets": "3.99%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Indian Bank",
+      "assets": "3.64%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Balkrishna Industries Ltd.",
+      "assets": "3.31%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Ipca Laboratories Ltd.",
+      "assets": "2.87%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Coforge Ltd.",
+      "assets": "2.80%",
+      "sector": "Technology"
+    },
+    {
+      "name": "Glenmark Pharmaceuticals Ltd.",
+      "assets": "2.77%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Fortis Healthcare Ltd.",
+      "assets": "2.62%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Hindustan Petroleum Corporation Ltd.",
+      "assets": "2.57%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Mahindra & Mahindra Financial Services Ltd.",
+      "assets": "2.52%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Marico Ltd.",
+      "assets": "2.38%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Vishal Mega Mart Ltd.",
+      "assets": "2.37%",
+      "sector": "Services"
+    },
+    {
+      "name": "Apollo Tyres Ltd.",
+      "assets": "2.24%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Persistent Systems Ltd.",
+      "assets": "2.19%",
+      "sector": "Technology"
+    },
+    {
+      "name": "Cummins India Ltd.",
+      "assets": "2.01%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Tata Communications Ltd.",
+      "assets": "1.90%",
+      "sector": "Communication"
+    },
+    {
+      "name": "Union Bank of India",
+      "assets": "1.90%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Jindal Steel Ltd.",
+      "assets": "1.81%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Aurobindo Pharma Ltd.",
+      "assets": "1.75%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Dabur India Ltd.",
+      "assets": "1.69%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Alkem Laboratories Ltd.",
+      "assets": "1.60%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Mphasis Ltd.",
+      "assets": "1.51%",
+      "sector": "Technology"
+    },
+    {
+      "name": "Bosch Ltd.",
+      "assets": "1.47%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "AIA Engineering Ltd.",
+      "assets": "1.44%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Delhivery Ltd.",
+      "assets": "1.41%",
+      "sector": "Services"
+    },
+    {
+      "name": "Karur Vysya Bank Ltd.",
+      "assets": "1.30%",
+      "sector": "Financial"
+    },
+    {
+      "name": "PB Fintech Ltd.",
+      "assets": "1.28%",
+      "sector": "Services"
+    },
+    {
+      "name": "United Spirits Ltd.",
+      "assets": "1.24%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Coromandel International Ltd.",
+      "assets": "1.22%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Gland Pharma Ltd.",
+      "assets": "1.22%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Hexaware Technologies Ltd.",
+      "assets": "1.12%",
+      "sector": "Technology"
+    },
+    {
+      "name": "Eternal Ltd.",
+      "assets": "1.07%",
+      "sector": "Services"
+    },
+    {
+      "name": "Star Health and Allied Insurance Company Ltd.",
+      "assets": "1.05%",
+      "sector": "Insurance"
+    },
+    {
+      "name": "Redington Ltd.",
+      "assets": "1.04%",
+      "sector": "Services"
+    },
+    {
+      "name": "The Indian Hotels Company Ltd.",
+      "assets": "1.03%",
+      "sector": "Services"
+    },
+    {
+      "name": "Bharat Forge Ltd.",
+      "assets": "1.01%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Indraprastha Gas Ltd.",
+      "assets": "0.99%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Nippon Life India Asset Management Ltd.",
+      "assets": "0.95%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Indusind Bank Ltd.",
+      "assets": "0.90%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Godrej Consumer Products Ltd.",
+      "assets": "0.90%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Escorts Kubota Ltd.",
+      "assets": "0.88%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "City Union Bank Ltd.",
+      "assets": "0.85%",
+      "sector": "Financial"
+    },
+    {
+      "name": "ACC Ltd.",
+      "assets": "0.84%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Sundram Fasteners Ltd.",
+      "assets": "0.75%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Timken India Ltd.",
+      "assets": "0.70%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "SKF India (Industrial) Ltd.",
+      "assets": "0.69%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Crompton Greaves Consumer Electricals Ltd.",
+      "assets": "0.69%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "KEC International Ltd.",
+      "assets": "0.65%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Supreme Industries Ltd.",
+      "assets": "0.63%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Dixon Technologies (India) Ltd.",
+      "assets": "0.58%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Sona BLW Precision Forgings Ltd.",
+      "assets": "0.54%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Gujarat Fluorochemicals Ltd.",
+      "assets": "0.46%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "SKF India Ltd.",
+      "assets": "0.43%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Cholamandalam Financial Holdings Ltd.",
+      "assets": "0.41%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Vesuvius India Ltd.",
+      "assets": "0.40%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Emami Ltd.",
+      "assets": "0.39%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Symphony Ltd.",
+      "assets": "0.37%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Ceat Ltd.",
+      "assets": "0.37%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Vardhman Textiles Ltd.",
+      "assets": "0.34%",
+      "sector": "Textiles"
+    },
+    {
+      "name": "Greenlam Industries Ltd.",
+      "assets": "0.32%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Aarti Industries Ltd.",
+      "assets": "0.31%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Oracle Financial Services Software Ltd.",
+      "assets": "0.29%",
+      "sector": "Technology"
+    },
+    {
+      "name": "Arvind Ltd.",
+      "assets": "0.28%",
+      "sector": "Textiles"
+    },
+    {
+      "name": "ICICI Lombard General Insurance Company Ltd.",
+      "assets": "0.26%",
+      "sector": "Insurance"
+    },
+    {
+      "name": "Navneet Education Ltd.",
+      "assets": "0.24%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Bharti Hexacom Ltd.",
+      "assets": "0.23%",
+      "sector": "Communication"
+    },
+    {
+      "name": "Five-Star Business Finance Ltd.",
+      "assets": "0.19%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Billionbrains Garage Ventures Ltd.",
+      "assets": "0.19%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Colgate-Palmolive (India) Ltd.",
+      "assets": "0.18%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "KNR Constructions Ltd.",
+      "assets": "0.17%",
+      "sector": "Construction"
+    },
+    {
+      "name": "LG Electronics India Ltd.",
+      "assets": "0.16%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Dhanuka Agritech Ltd.",
+      "assets": "0.13%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Greenpanel Industries Ltd.",
+      "assets": "0.13%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Greenply Industries Ltd.",
+      "assets": "0.13%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Jagran Prakashan Ltd.",
+      "assets": "0.05%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "ICICI Prudential Asset Management Company Ltd.",
+      "assets": "0.04%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Fund returns",
+      "assets": "+24.8%",
+      "sector": "+24.8%"
+    },
+    {
+      "name": "Category average (Equity Mid Cap)",
+      "assets": "+21.6%",
+      "sector": "+21.6%"
+    }
+  ],
+  "return_1y": null,
+  "return_3y": null,
+  "return_5y": null,
+  "elss_tax_benefit": "ELSS schemes qualify for deduction under Section 80C up to ₹1.5 lakh and have a 3-year lock-in.",
+  "ltcg_tax_rule": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%. Check past data Compare similar funds Name 1Y 3Y Fund Size(Cr) WhiteOak Capital Mid Cap Fund Direct Growth +17.41% +26.49% 4,467.89 Edelweiss ",
+  "stcg_tax_rule": "If you redeem within one year, returns are taxed at 20%.",
+  "tax_implication": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%. Check past data Compare similar funds Name 1Y 3Y Fund Size(Cr) WhiteOak Capital Mid Cap Fund Direct Growth +17.41% +26.49% 4,467.89 Edelweiss Mid Cap Direct Plan Growth +19.24% +26.37% 13,801.71 Nippon India Growth Mid Cap Fund Direct Growth +19.08% +25.91% 41,727.36 HDFC Mid Cap Fund Direct Growth +16.87% +24.77% 92,186.87 Sundaram Mid Cap",
+  "stamp_duty": "Stamp duty on investment: 0.005% (from July 1st, 2020",
+  "fund_house": "Mutual Funds by GrowwMutual funds by Groww designed for your investment goals",
+  "fund_house_url": "https://groww.in/mutual-funds/amc/groww-mutual-funds",
+  "about_scheme": "Pricing Blog Media & Press Careers Help & Support Trust & Safety Investor Relations",
+  "investment_objective": "The scheme seeks to provide long-term capital appreciation/income by investing predominantly in Mid-Cap companies. Fund benchmark NIFTY Midcap 150 Total Return Index Scheme Information Document(SID) Fund house HDFC Mutual Fund Rank (total assets) #2 in India Total AUM ₹9,37,232.21 Cr Date of Incorporation 10 Dec 1999 Phone 022 – 66316333 E-mail [email protected] Website http://www.hdfcfund.com Launch Date 10 Dec 1999 Address \"HDFC House\", 2nd Floor, H. T. Parekh Marg, 165-166, BackbayReclamation",
+  "min_1st_investment": "₹100",
+  "min_2nd_investment": "₹100",
+  "one_time_sip": "One time",
+  "holding_analysis": "Holdings: 83 positions. 1 year +1.31%; 3 years +22.25%; 5 years +61.57%; 10 years +181.88%; Max Financial Services Ltd. 4.51%; AU Small Finance Bank Ltd. 4.19%; The Federal Bank Ltd. 3.99%; Indian Bank 3.64%; Balkrishna Industries Ltd. 3.31%; Ipca Laboratories Ltd. 2.87%",
+  "advanced_ratios": "Alpha 50 Index Fund SBI Quant Mirae Asset DSP Baroda BNP Paribas Mahindra Manulife Sundaram Samco Taurus Mutual Fund Houses Best Hybrid Mutual funds Best ELSS Mutual funds Best Dividend Yield Mutual f",
+  "annualised_returns_definition": "Average of the yearly returns of a mutual fund over a given period.",
+  "absolute_returns_definition": "The total return of a mutual fund over a given period.",
+  "expense_ratio_definition": "A fee payable to a mutual fund house for managing your mutual fund investments.",
+  "exit_load_definition": "A fee payable to a mutual fund house for exiting a fund before the completion of a specified period.",
+  "stamp_duty_definition": "A form of tax payable for the purchase or sale of an asset or security.",
+  "tax_definition": "Tax on capital gains (LTCG/STCG) depending on holding period and fund type.",
+  "faqs": []
+}

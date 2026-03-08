@@ -1,0 +1,1310 @@
+{
+  "scheme_id": "bandhan-small-cap-fund-direct-growth",
+  "scheme_name": "Bandhan Small Cap Fund Direct Growth",
+  "source_url": "https://groww.in/mutual-funds/bandhan-small-cap-fund-direct-growth",
+  "last_updated": "2026-03-08",
+  "type": "Direct",
+  "expense_ratio": "0.51%",
+  "exit_load": "Exit load of 1%, if redeemed within 1 year.",
+  "min_sip": "₹100",
+  "min_lumpsum": "₹1000",
+  "lock_in_period": "3 years (ELSS lock-in)",
+  "benchmark": "BSE 250 SmallCap Total Return Index Scheme Information Document(SID) Fund house IDFC Mutual Fund Rank (total assets) #9 in India Total AUM ₹1,94,296.46 Cr Date of Incorporation 20 Dec 1999 Phone -- E-",
+  "risk": "Very High risk",
+  "fund_manager": [
+    "Manish Gunwani",
+    "Kirthi Jain",
+    "Ritika Behera",
+    "Gaurav Satra"
+  ],
+  "launch_date": "20 Dec 1999",
+  "category": "Equity Small Cap",
+  "scheme_type": null,
+  "asset_allocation": "Equity/Debt/Others as per holdings table. Top holdings: 6 months -5.58%; 1 year -3.62%; 3 years +22.13%; 5 years +61.57%; Sobha Ltd. 3.64%",
+  "top_holdings": [
+    {
+      "name": "6 months",
+      "assets": "-5.58%",
+      "sector": "₹30,000"
+    },
+    {
+      "name": "1 year",
+      "assets": "-3.62%",
+      "sector": "₹60,000"
+    },
+    {
+      "name": "3 years",
+      "assets": "+22.13%",
+      "sector": "₹1,80,000"
+    },
+    {
+      "name": "5 years",
+      "assets": "+61.57%",
+      "sector": "₹3,00,000"
+    },
+    {
+      "name": "Sobha Ltd.",
+      "assets": "3.64%",
+      "sector": "Construction"
+    },
+    {
+      "name": "REC Ltd.",
+      "assets": "3.52%",
+      "sector": "Financial"
+    },
+    {
+      "name": "LT Foods Ltd.",
+      "assets": "2.39%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "The South Indian Bank Ltd.",
+      "assets": "2.07%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Info Edge (India) Ltd.",
+      "assets": "1.44%",
+      "sector": "Services"
+    },
+    {
+      "name": "Arvind Ltd.",
+      "assets": "1.43%",
+      "sector": "Textiles"
+    },
+    {
+      "name": "PNB Housing Finance Ltd.",
+      "assets": "1.37%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Cholamandalam Financial Holdings Ltd.",
+      "assets": "1.31%",
+      "sector": "Financial"
+    },
+    {
+      "name": "The Great Eastern Shipping Company Ltd.",
+      "assets": "1.30%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Yatharth Hospital & Trauma Care Services Ltd.",
+      "assets": "1.18%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "State Bank of India",
+      "assets": "1.17%",
+      "sector": "Financial"
+    },
+    {
+      "name": "DCB Bank Ltd.",
+      "assets": "1.15%",
+      "sector": "Financial"
+    },
+    {
+      "name": "The Karnataka Bank Ltd.",
+      "assets": "1.13%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Cyient Ltd.",
+      "assets": "1.12%",
+      "sector": "Technology"
+    },
+    {
+      "name": "Godrej Industries Ltd.",
+      "assets": "1.08%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Apar Industries Ltd.",
+      "assets": "1.07%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "TARC Ltd.",
+      "assets": "1.07%",
+      "sector": "Construction"
+    },
+    {
+      "name": "TVS Holdings Ltd.",
+      "assets": "1.06%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Jubilant Pharmova Ltd.",
+      "assets": "1.06%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Glenmark Pharmaceuticals Ltd.",
+      "assets": "1.00%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "One97 Communications Ltd.",
+      "assets": "0.94%",
+      "sector": "Services"
+    },
+    {
+      "name": "Repco Home Finance Ltd.",
+      "assets": "0.92%",
+      "sector": "Financial"
+    },
+    {
+      "name": "General Insurance Corporation of India",
+      "assets": "0.90%",
+      "sector": "Insurance"
+    },
+    {
+      "name": "Power Finance Corporation Ltd.",
+      "assets": "0.89%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Rashi Peripherals Ltd.",
+      "assets": "0.89%",
+      "sector": "Services"
+    },
+    {
+      "name": "PCBL Chemical Ltd.",
+      "assets": "0.85%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Shaily Engineering Plastics Ltd.",
+      "assets": "0.84%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Saatvik Green Energy Ltd.",
+      "assets": "0.82%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Angel One Ltd.",
+      "assets": "0.80%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Piramal Pharma Ltd.",
+      "assets": "0.78%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Inox Wind Ltd.",
+      "assets": "0.76%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Senco Gold Ltd.",
+      "assets": "0.75%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Strides Pharma Science Ltd.",
+      "assets": "0.69%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Godawari Power And Ispat Ltd.",
+      "assets": "0.69%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Kirloskar Oil Engines Ltd.",
+      "assets": "0.69%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Bharat Coking Coal Ltd.",
+      "assets": "0.69%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Sanathan Textiles Ltd.",
+      "assets": "0.68%",
+      "sector": "Textiles"
+    },
+    {
+      "name": "SIS Ltd.",
+      "assets": "0.64%",
+      "sector": "Services"
+    },
+    {
+      "name": "LIC Housing Finance Ltd.",
+      "assets": "0.63%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Mastek Ltd.",
+      "assets": "0.63%",
+      "sector": "Technology"
+    },
+    {
+      "name": "Prestige Estates Projects Ltd.",
+      "assets": "0.62%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Nitin Spinners Ltd.",
+      "assets": "0.61%",
+      "sector": "Textiles"
+    },
+    {
+      "name": "P N Gadgil Jewellers Ltd.",
+      "assets": "0.60%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Indusind Bank Ltd.",
+      "assets": "0.59%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Axis Bank Ltd.",
+      "assets": "0.57%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Sky Gold And Diamonds Ltd.",
+      "assets": "0.57%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Manappuram Finance Ltd.",
+      "assets": "0.56%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Fedbank Financial Services Ltd.",
+      "assets": "0.54%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Arvind Smartspaces Ltd.",
+      "assets": "0.54%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Pace Digitek Ltd.",
+      "assets": "0.54%",
+      "sector": "Communication"
+    },
+    {
+      "name": "ICICI Lombard General Insurance Company Ltd.",
+      "assets": "0.52%",
+      "sector": "Insurance"
+    },
+    {
+      "name": "Aditya Birla Real Estate Ltd.",
+      "assets": "0.51%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Vintage Coffee & Beverages Ltd.",
+      "assets": "0.51%",
+      "sector": "Services"
+    },
+    {
+      "name": "Paradeep Phosphates Ltd.",
+      "assets": "0.50%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Deepak Fertilisers And Petrochemicals Corporation Ltd.",
+      "assets": "0.49%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Tata Communications Ltd.",
+      "assets": "0.48%",
+      "sector": "Communication"
+    },
+    {
+      "name": "Can Fin Homes Ltd.",
+      "assets": "0.47%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Jubilant Ingrevia Ltd.",
+      "assets": "0.47%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Epigral Ltd.",
+      "assets": "0.47%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Signatureglobal (India) Ltd.",
+      "assets": "0.46%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Amara Raja Energy & Mobility Ltd",
+      "assets": "0.45%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "SH Kelkar And Company Ltd.",
+      "assets": "0.45%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Grasim Industries Ltd.",
+      "assets": "0.44%",
+      "sector": "Construction"
+    },
+    {
+      "name": "eClerx Services Ltd.",
+      "assets": "0.44%",
+      "sector": "Services"
+    },
+    {
+      "name": "Wockhardt Ltd.",
+      "assets": "0.43%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Hi-Tech Pipes Ltd.",
+      "assets": "0.43%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Cohance Lifesciences Ltd.",
+      "assets": "0.43%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Aptus Value Housing Finance India Ltd.",
+      "assets": "0.42%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Vedanta Ltd.",
+      "assets": "0.41%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Kolte-Patil Developers Ltd.",
+      "assets": "0.41%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Aurobindo Pharma Ltd.",
+      "assets": "0.40%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "NCC Ltd.",
+      "assets": "0.40%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Jupiter Wagons Ltd.",
+      "assets": "0.40%",
+      "sector": "Services"
+    },
+    {
+      "name": "Akums Drugs And Pharmaceuticals Ltd.",
+      "assets": "0.40%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Birlasoft Ltd.",
+      "assets": "0.39%",
+      "sector": "Technology"
+    },
+    {
+      "name": "Nuvama Wealth Management Ltd.",
+      "assets": "0.39%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Hindustan Zinc Ltd.",
+      "assets": "0.38%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Neuland Laboratories Ltd.",
+      "assets": "0.38%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Ethos Ltd.",
+      "assets": "0.38%",
+      "sector": "Services"
+    },
+    {
+      "name": "Shilpa Medicare Ltd.",
+      "assets": "0.37%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Baazar Style Retail Ltd.",
+      "assets": "0.37%",
+      "sector": "Services"
+    },
+    {
+      "name": "Styrenix Performance Materials Ltd.",
+      "assets": "0.36%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Mahindra Lifespace Developers Ltd.",
+      "assets": "0.36%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Kewal Kiran Clothing Ltd.",
+      "assets": "0.36%",
+      "sector": "Textiles"
+    },
+    {
+      "name": "Ujjivan Small Finance Bank Ltd.",
+      "assets": "0.36%",
+      "sector": "Financial"
+    },
+    {
+      "name": "E2E Networks Ltd.",
+      "assets": "0.35%",
+      "sector": "Technology"
+    },
+    {
+      "name": "Juniper Hotels Ltd.",
+      "assets": "0.35%",
+      "sector": "Services"
+    },
+    {
+      "name": "Tilaknagar Industries Ltd.",
+      "assets": "0.34%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Syrma SGS Technology Ltd.",
+      "assets": "0.34%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Sunteck Realty Ltd.",
+      "assets": "0.33%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Aditya Birla Fashion and Retail Ltd.",
+      "assets": "0.33%",
+      "sector": "Services"
+    },
+    {
+      "name": "EPACK Durable Ltd.",
+      "assets": "0.33%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Kirloskar Ferrous Industries Ltd.",
+      "assets": "0.32%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "KEC International Ltd.",
+      "assets": "0.32%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Birla Corporation Ltd.",
+      "assets": "0.31%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Eternal Ltd.",
+      "assets": "0.31%",
+      "sector": "Services"
+    },
+    {
+      "name": "JSW Cement Ltd.",
+      "assets": "0.31%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Pennar Industries Ltd.",
+      "assets": "0.30%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "EFC Ltd.",
+      "assets": "0.30%",
+      "sector": "Services"
+    },
+    {
+      "name": "Eris Lifesciences Ltd.",
+      "assets": "0.30%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Sansera Engineering Ltd.",
+      "assets": "0.30%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Hindustan Petroleum Corporation Ltd.",
+      "assets": "0.29%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Crompton Greaves Consumer Electricals Ltd.",
+      "assets": "0.29%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "KFin Technologies Ltd.",
+      "assets": "0.29%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Vikram Solar Ltd.",
+      "assets": "0.29%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Bank Of Baroda",
+      "assets": "0.28%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Kilburn Engineering Ltd.",
+      "assets": "0.28%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Marksans Pharma Ltd.",
+      "assets": "0.28%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Stove Kraft Ltd.",
+      "assets": "0.28%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Star Health and Allied Insurance Company Ltd.",
+      "assets": "0.27%",
+      "sector": "Insurance"
+    },
+    {
+      "name": "Max Estates Ltd.",
+      "assets": "0.27%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Vishnu Chemicals Ltd.",
+      "assets": "0.26%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Usha Martin Ltd.",
+      "assets": "0.26%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Computer Age Management Services Ltd.",
+      "assets": "0.26%",
+      "sector": "Services"
+    },
+    {
+      "name": "Samvardhana Motherson International Ltd.",
+      "assets": "0.25%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Inox Green Energy Services Ltd.",
+      "assets": "0.25%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Sagility Ltd.",
+      "assets": "0.25%",
+      "sector": "Services"
+    },
+    {
+      "name": "Onesource Specialty Pharma Ltd.",
+      "assets": "0.25%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "NLC India Ltd.",
+      "assets": "0.24%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Electronics Mart India Ltd.",
+      "assets": "0.24%",
+      "sector": "Services"
+    },
+    {
+      "name": "RHI Magnesita India Ltd.",
+      "assets": "0.23%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Krsnaa Diagnostics Ltd.",
+      "assets": "0.23%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "AWL Agri Business Ltd.",
+      "assets": "0.23%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Updater Services Ltd.",
+      "assets": "0.23%",
+      "sector": "Services"
+    },
+    {
+      "name": "Apeejay Surrendra Park Hotels Ltd.",
+      "assets": "0.23%",
+      "sector": "Services"
+    },
+    {
+      "name": "JB Chemicals & Pharmaceuticals Ltd.",
+      "assets": "0.22%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Pondy Oxides & Chemicals Ltd.",
+      "assets": "0.22%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Motilal Oswal Financial Services Ltd.",
+      "assets": "0.22%",
+      "sector": "Financial"
+    },
+    {
+      "name": "GPT Healthcare Ltd.",
+      "assets": "0.22%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "CESC Ltd.",
+      "assets": "0.21%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Archean Chemical Industries Ltd.",
+      "assets": "0.21%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Emcure Pharmaceuticals Ltd.",
+      "assets": "0.21%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Aarti Industries Ltd.",
+      "assets": "0.20%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Blue Star Ltd.",
+      "assets": "0.20%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Steel Strips Wheels Ltd.",
+      "assets": "0.20%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Triveni Engineering & Industries Ltd.",
+      "assets": "0.20%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Lumax Auto Technologies Ltd.",
+      "assets": "0.20%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Aster DM Healthcare Ltd.",
+      "assets": "0.20%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Vidya Wires Ltd.",
+      "assets": "0.20%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Power Mech Projects Ltd.",
+      "assets": "0.19%",
+      "sector": "Construction"
+    },
+    {
+      "name": "ACME Solar Holdings Ltd.",
+      "assets": "0.19%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Bombay Burmah Trading Corporation Ltd.",
+      "assets": "0.18%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Spicejet Ltd.",
+      "assets": "0.18%",
+      "sector": "Services"
+    },
+    {
+      "name": "Medplus Health Services Ltd.",
+      "assets": "0.18%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Awfis Space Solutions Ltd.",
+      "assets": "0.18%",
+      "sector": "Services"
+    },
+    {
+      "name": "Ecos (India) Mobility & Hospitality Ltd.",
+      "assets": "0.18%",
+      "sector": "Services"
+    },
+    {
+      "name": "GMM Pfaudler Ltd.",
+      "assets": "0.17%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Flair Writing Industries Ltd.",
+      "assets": "0.17%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Kirloskar Pneumatic Company Ltd.",
+      "assets": "0.16%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Indus Towers Ltd.",
+      "assets": "0.16%",
+      "sector": "Communication"
+    },
+    {
+      "name": "Skipper Ltd.",
+      "assets": "0.16%",
+      "sector": "Communication"
+    },
+    {
+      "name": "Keystone Realtors Ltd",
+      "assets": "0.16%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Sai Life Sciences Ltd.",
+      "assets": "0.16%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Quess Corp Ltd.",
+      "assets": "0.15%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Metropolis Healthcare Ltd.",
+      "assets": "0.15%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Greenpanel Industries Ltd.",
+      "assets": "0.15%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Clean Science And Technology Ltd.",
+      "assets": "0.15%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Aditya Birla Sun Life AMC Ltd.",
+      "assets": "0.15%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Eureka Forbes Ltd.",
+      "assets": "0.15%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "TruAlt Bioenergy Ltd.",
+      "assets": "0.15%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Emami Ltd.",
+      "assets": "0.14%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "JK Lakshmi Cement Ltd.",
+      "assets": "0.14%",
+      "sector": "Construction"
+    },
+    {
+      "name": "The Ramco Cements Ltd.",
+      "assets": "0.14%",
+      "sector": "Construction"
+    },
+    {
+      "name": "Narayana Hrudayalaya Ltd.",
+      "assets": "0.14%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Krishna Institute of Medical Sciences Ltd",
+      "assets": "0.14%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "NTPC Green Energy Ltd.",
+      "assets": "0.14%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Greenply Industries Ltd.",
+      "assets": "0.13%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Heritage Foods Ltd.",
+      "assets": "0.13%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Kotak Mahindra Bank Ltd.",
+      "assets": "0.13%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Sterlite Technologies Ltd.",
+      "assets": "0.13%",
+      "sector": "Communication"
+    },
+    {
+      "name": "Redington Ltd.",
+      "assets": "0.13%",
+      "sector": "Services"
+    },
+    {
+      "name": "Edelweiss Financial Services Ltd.",
+      "assets": "0.13%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Jyothy Labs Ltd.",
+      "assets": "0.13%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "Satin Creditcare Network Ltd.",
+      "assets": "0.13%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Sapphire Foods India Ltd.",
+      "assets": "0.13%",
+      "sector": "Services"
+    },
+    {
+      "name": "R R Kabel Ltd.",
+      "assets": "0.13%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Time Technoplast Ltd.",
+      "assets": "0.12%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Landmark Cars Ltd.",
+      "assets": "0.12%",
+      "sector": "Services"
+    },
+    {
+      "name": "Oswal Pumps Ltd.",
+      "assets": "0.12%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Orchid Pharma Ltd.",
+      "assets": "0.11%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Alicon Castalloy Ltd.",
+      "assets": "0.11%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Jindal Saw Ltd.",
+      "assets": "0.11%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Zee Entertainment Enterprises Ltd.",
+      "assets": "0.11%",
+      "sector": "Communication"
+    },
+    {
+      "name": "Gulf Oil Lubricants India Ltd.",
+      "assets": "0.11%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Indiamart Intermesh Ltd.",
+      "assets": "0.11%",
+      "sector": "Services"
+    },
+    {
+      "name": "Wakefit Innovations Ltd.",
+      "assets": "0.11%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Exide Industries Ltd.",
+      "assets": "0.10%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "JK Tyre & Industries Ltd.",
+      "assets": "0.10%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Rane Holdings Ltd.",
+      "assets": "0.10%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Brigade Hotel Ventures Ltd.",
+      "assets": "0.10%",
+      "sector": "Services"
+    },
+    {
+      "name": "FDC Ltd.",
+      "assets": "0.09%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Filatex India Ltd.",
+      "assets": "0.09%",
+      "sector": "Textiles"
+    },
+    {
+      "name": "Garware Hi-Tech Films Ltd.",
+      "assets": "0.09%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "VRL Logistics Ltd.",
+      "assets": "0.09%",
+      "sector": "Services"
+    },
+    {
+      "name": "Amanta Healthcare Ltd.",
+      "assets": "0.09%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Suryoday Small Finance Bank Ltd.",
+      "assets": "0.09%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Innova Captab Ltd.",
+      "assets": "0.09%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Concord Enviro Systems Ltd.",
+      "assets": "0.09%",
+      "sector": "Others"
+    },
+    {
+      "name": "Aegis Vopak Terminals Ltd.",
+      "assets": "0.09%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Artemis Medicare Services Ltd.",
+      "assets": "0.08%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Windlas Biotech Ltd.",
+      "assets": "0.08%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Bansal Wire Industries Ltd.",
+      "assets": "0.08%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Ventive Hospitality Ltd.",
+      "assets": "0.08%",
+      "sector": "Services"
+    },
+    {
+      "name": "Saregama India Ltd.",
+      "assets": "0.07%",
+      "sector": "Services"
+    },
+    {
+      "name": "Mayur Uniquoters Ltd.",
+      "assets": "0.07%",
+      "sector": "Textiles"
+    },
+    {
+      "name": "JK Paper Ltd.",
+      "assets": "0.07%",
+      "sector": "Consumer Staples"
+    },
+    {
+      "name": "V2 Retail Ltd.",
+      "assets": "0.07%",
+      "sector": "Services"
+    },
+    {
+      "name": "Amber Enterprises India Ltd.",
+      "assets": "0.07%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Vedant Fashions Ltd.",
+      "assets": "0.07%",
+      "sector": "Services"
+    },
+    {
+      "name": "TBO Tek Ltd.",
+      "assets": "0.07%",
+      "sector": "Services"
+    },
+    {
+      "name": "All Time Plastics Ltd.",
+      "assets": "0.07%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Finolex Cables Ltd.",
+      "assets": "0.06%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Kajaria Ceramics Ltd.",
+      "assets": "0.06%",
+      "sector": "Construction"
+    },
+    {
+      "name": "National Aluminium Company Ltd.",
+      "assets": "0.06%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Thirumalai Chemicals Ltd.",
+      "assets": "0.06%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Arvind Fashions Ltd.",
+      "assets": "0.06%",
+      "sector": "Textiles"
+    },
+    {
+      "name": "BlackBuck Ltd.",
+      "assets": "0.06%",
+      "sector": "Services"
+    },
+    {
+      "name": "Jain Resource Recycling Ltd.",
+      "assets": "0.06%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "Sudeep Pharma Ltd.",
+      "assets": "0.06%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Astrazeneca Pharma India Ltd.",
+      "assets": "0.05%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Ellenbarrie Industrial Gases Ltd.",
+      "assets": "0.05%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "MOIL Ltd.",
+      "assets": "0.05%",
+      "sector": "Metals & Mining"
+    },
+    {
+      "name": "IRM Energy Ltd.",
+      "assets": "0.05%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Jyoti CNC Automation Ltd.",
+      "assets": "0.05%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Godavari Biorefineries Ltd.",
+      "assets": "0.05%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "Digitide Solutions Ltd.",
+      "assets": "0.05%",
+      "sector": "Services"
+    },
+    {
+      "name": "Chemplast Sanmar Ltd.",
+      "assets": "0.04%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "PVR Inox Ltd.",
+      "assets": "0.04%",
+      "sector": "Services"
+    },
+    {
+      "name": "Gujarat State Petronet Ltd.",
+      "assets": "0.04%",
+      "sector": "Energy"
+    },
+    {
+      "name": "Poly Medicure Ltd.",
+      "assets": "0.03%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "CSB Bank Ltd.",
+      "assets": "0.03%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Yatra Online Ltd.",
+      "assets": "0.03%",
+      "sector": "Services"
+    },
+    {
+      "name": "Bluspring Enterprises Ltd.",
+      "assets": "0.03%",
+      "sector": "Services"
+    },
+    {
+      "name": "Finbud Financial Services Ltd.",
+      "assets": "0.03%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Pine Labs Ltd.",
+      "assets": "0.03%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Nephrocare Health Services Ltd.",
+      "assets": "0.03%",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "Butterfly Gandhimathi Appliances Ltd.",
+      "assets": "0.02%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Sudarshan Chemical Industries Ltd.",
+      "assets": "0.02%",
+      "sector": "Chemicals"
+    },
+    {
+      "name": "GNA Axles Ltd.",
+      "assets": "0.02%",
+      "sector": "Automobile"
+    },
+    {
+      "name": "Orient Electric Ltd.",
+      "assets": "0.02%",
+      "sector": "Consumer Discretionary"
+    },
+    {
+      "name": "Rishabh Instruments Ltd.",
+      "assets": "0.02%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "Bajel Projects Ltd.",
+      "assets": "0.02%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "DAM Capital Advisors Ltd.",
+      "assets": "0.02%",
+      "sector": "Financial"
+    },
+    {
+      "name": "STL Networks Ltd.",
+      "assets": "0.02%",
+      "sector": "Technology"
+    },
+    {
+      "name": "GK Energy Ltd.",
+      "assets": "0.01%",
+      "sector": "Capital Goods"
+    },
+    {
+      "name": "PTC India Financial Services Ltd.",
+      "assets": "0.00%",
+      "sector": "Financial"
+    },
+    {
+      "name": "Fund returns",
+      "assets": "+10.2%",
+      "sector": "+10.2%"
+    },
+    {
+      "name": "Category average (Equity Small Cap)",
+      "assets": "-6.3%",
+      "sector": "-6.3%"
+    }
+  ],
+  "return_1y": null,
+  "return_3y": null,
+  "return_5y": null,
+  "elss_tax_benefit": "ELSS schemes qualify for deduction under Section 80C up to ₹1.5 lakh and have a 3-year lock-in.",
+  "ltcg_tax_rule": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%. Check past data Compare similar funds Name 1Y 3Y Fund Size(Cr) Bandhan Small Cap Fund Direct Growth +10.22% +29.35% 19,266.54 Invesco India Sm",
+  "stcg_tax_rule": "If you redeem within one year, returns are taxed at 20%.",
+  "tax_implication": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%. Check past data Compare similar funds Name 1Y 3Y Fund Size(Cr) Bandhan Small Cap Fund Direct Growth +10.22% +29.35% 19,266.54 Invesco India Smallcap Fund Direct Growth +14.59% +24.21% 9,717.22 Nippon India Small Cap Fund Direct Growth +9.13% +20.13% 65,812.16 Quant Small Cap Fund Direct Plan Growth +3.66% +18.20% 27,384.03 Axis Small Cap Fu",
+  "stamp_duty": "Stamp duty on investment: 0.005% (from July 1st, 2020",
+  "fund_house": "Mutual Funds by GrowwMutual funds by Groww designed for your investment goals",
+  "fund_house_url": "https://groww.in/mutual-funds/amc/groww-mutual-funds",
+  "about_scheme": "Pricing Blog Media & Press Careers Help & Support Trust & Safety Investor Relations",
+  "investment_objective": "The Scheme seeks to generate long term capital appreciation by investing predominantly in equities and equity linked securities of small cap segment. Fund benchmark BSE 250 SmallCap Total Return Index Scheme Information Document(SID) Fund house IDFC Mutual Fund Rank (total assets) #9 in India Total AUM ₹1,94,296.46 Cr Date of Incorporation 20 Dec 1999 Phone -- E-mail -- Website https://bandhanmutual.com Launch Date 20 Dec 1999 Address One World Centre, 6th Floor, Tower 1C,Senapati Bapat Marg, Pr",
+  "min_1st_investment": "₹1000",
+  "min_2nd_investment": "₹1000",
+  "one_time_sip": "One time",
+  "holding_analysis": "Holdings: 252 positions. 6 months -5.58%; 1 year -3.62%; 3 years +22.13%; 5 years +61.57%; Sobha Ltd. 3.64%; REC Ltd. 3.52%; LT Foods Ltd. 2.39%; The South Indian Bank Ltd. 2.07%; Info Edge (India) Ltd. 1.44%; Arvind Ltd. 1.43%",
+  "advanced_ratios": "Alpha 50 Index Fund SBI Quant Mirae Asset DSP Baroda BNP Paribas Mahindra Manulife Sundaram Samco Taurus Mutual Fund Houses Best Hybrid Mutual funds Best ELSS Mutual funds Best Dividend Yield Mutual f",
+  "annualised_returns_definition": "Average of the yearly returns of a mutual fund over a given period.",
+  "absolute_returns_definition": "The total return of a mutual fund over a given period.",
+  "expense_ratio_definition": "A fee payable to a mutual fund house for managing your mutual fund investments.",
+  "exit_load_definition": "A fee payable to a mutual fund house for exiting a fund before the completion of a specified period.",
+  "stamp_duty_definition": "A form of tax payable for the purchase or sale of an asset or security.",
+  "tax_definition": "Tax on capital gains (LTCG/STCG) depending on holding period and fund type.",
+  "faqs": []
+}

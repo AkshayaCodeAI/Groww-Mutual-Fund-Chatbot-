@@ -1,0 +1,18 @@
+# Streamlit config — used locally and on Streamlit Community Cloud.
+# https://docs.streamlit.io/develop/api-reference/configuration/config.toml
+
+[server]
+port = 8501
+address = "0.0.0.0"
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+# Use default; can override for light/dark
+# primaryColor = "#1565c0"
+# backgroundColor = "#ffffff"
+# secondaryBackgroundColor = "#f0f2f6"

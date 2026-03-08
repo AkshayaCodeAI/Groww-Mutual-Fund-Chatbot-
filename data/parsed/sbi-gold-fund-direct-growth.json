@@ -1,0 +1,83 @@
+{
+  "scheme_id": "sbi-gold-fund-direct-growth",
+  "scheme_name": "SBI Gold Fund Direct Growth",
+  "source_url": "https://groww.in/mutual-funds/sbi-gold-fund-direct-growth",
+  "last_updated": "2026-03-08",
+  "type": "Direct",
+  "expense_ratio": "0.24%",
+  "exit_load": "Exit load of 1% if redeemed within 15 days.",
+  "min_sip": "₹500",
+  "min_lumpsum": "₹5000",
+  "lock_in_period": "3 years (ELSS lock-in)",
+  "benchmark": "Domestic Price of Gold Scheme Information Document(SID) Fund house SBI Mutual Fund Rank (total assets) #1 in India Total AUM ₹12,60,925.93 Cr Date of Incorporation 29 Jun 1987 Phone 022-61793000 / 180",
+  "risk": "High risk",
+  "fund_manager": [
+    "Pradeep Kesavan",
+    "Viral Chhadva"
+  ],
+  "launch_date": "29 Jun 1987",
+  "category": "Commodities Gold",
+  "scheme_type": null,
+  "asset_allocation": "Equity/Debt/Others as per holdings table. Top holdings: 1 year +40.28%; 3 years +99.42%; 5 years +140.54%; 10 years +238.22%; SBI Gold ETF 99.61%",
+  "top_holdings": [
+    {
+      "name": "1 year",
+      "assets": "+40.28%",
+      "sector": "₹60,000"
+    },
+    {
+      "name": "3 years",
+      "assets": "+99.42%",
+      "sector": "₹1,80,000"
+    },
+    {
+      "name": "5 years",
+      "assets": "+140.54%",
+      "sector": "₹3,00,000"
+    },
+    {
+      "name": "10 years",
+      "assets": "+238.22%",
+      "sector": "₹6,00,000"
+    },
+    {
+      "name": "SBI Gold ETF",
+      "assets": "99.61%",
+      "sector": "--"
+    },
+    {
+      "name": "Fund returns",
+      "assets": "+39.9%",
+      "sector": "+39.9%"
+    },
+    {
+      "name": "Category average (Commodities Gold)",
+      "assets": "+34.1%",
+      "sector": "+34.1%"
+    }
+  ],
+  "return_1y": null,
+  "return_3y": null,
+  "return_5y": null,
+  "elss_tax_benefit": "ELSS schemes qualify for deduction under Section 80C up to ₹1.5 lakh and have a 3-year lock-in.",
+  "ltcg_tax_rule": "If you redeem within two years, returns are taxed as per your Income Tax slab. If you redeem after two years, returns are taxed at 12.5%. Check past data Fund management PK Pradeep Kesavan Dec 2023 - Present View details Education Mr. Kesavan has done B.Com, MBA (Finance) and CFA Experience Prior to",
+  "stcg_tax_rule": "If you redeem within two years, returns are taxed as per your Income Tax slab.",
+  "tax_implication": "If you redeem within two years, returns are taxed as per your Income Tax slab. If you redeem after two years, returns are taxed at 12.5%. Check past data Fund management PK Pradeep Kesavan Dec 2023 - Present View details Education Mr. Kesavan has done B.Com, MBA (Finance) and CFA Experience Prior to joining SBI MF, he has worked with Elara Capital, Accenture Strategy, Morgan Stanley and 3i Infotech Also manages these schemes SBI Corporate Bond Fund Direct Growth SBI Banking and PSU Fund Direct G",
+  "stamp_duty": "Stamp duty on investment: 0.005% (from July 1st, 2020",
+  "fund_house": "Mutual Funds by GrowwMutual funds by Groww designed for your investment goals",
+  "fund_house_url": "https://groww.in/mutual-funds/amc/groww-mutual-funds",
+  "about_scheme": "Pricing Blog Media & Press Careers Help & Support Trust & Safety Investor Relations",
+  "investment_objective": "The Scheme seeks to provide returns that closely correspond to returns provided by SBI Gold Exchange Traded Scheme (SBI GETS). Fund benchmark Domestic Price of Gold Scheme Information Document(SID) Fund house SBI Mutual Fund Rank (total assets) #1 in India Total AUM ₹12,60,925.93 Cr Date of Incorporation 29 Jun 1987 Phone 022-61793000 / 1800-425-5425 E-mail [email protected] Website http://www.sbimf.com Launch Date 29 Jun 1987 Address 9th Floor & Unit no. 1002, 1003 and 1004 of 10th floor,Cresce",
+  "min_1st_investment": "₹5000",
+  "min_2nd_investment": "₹1000",
+  "one_time_sip": "One time",
+  "holding_analysis": "Holdings: 7 positions. 1 year +40.28%; 3 years +99.42%; 5 years +140.54%; 10 years +238.22%; SBI Gold ETF 99.61%; Fund returns +39.9%; Category average (Commodities Gold) +34.1%",
+  "advanced_ratios": "Alpha 50 Index Fund SBI Quant Mirae Asset DSP Baroda BNP Paribas Mahindra Manulife Sundaram Samco Taurus Mutual Fund Houses Best Hybrid Mutual funds Best ELSS Mutual funds Best Dividend Yield Mutual f",
+  "annualised_returns_definition": "Average of the yearly returns of a mutual fund over a given period.",
+  "absolute_returns_definition": "The total return of a mutual fund over a given period.",
+  "expense_ratio_definition": "A fee payable to a mutual fund house for managing your mutual fund investments.",
+  "exit_load_definition": "A fee payable to a mutual fund house for exiting a fund before the completion of a specified period.",
+  "stamp_duty_definition": "A form of tax payable for the purchase or sale of an asset or security.",
+  "tax_definition": "Tax on capital gains (LTCG/STCG) depending on holding period and fund type.",
+  "faqs": []
+}

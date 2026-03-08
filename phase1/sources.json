@@ -1,0 +1,35 @@
+{
+  "scheme_pages": [
+    {
+      "scheme_id": "hdfc-silver-etf-fof-direct-growth",
+      "scheme_name": "HDFC Silver ETF FoF Direct Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-silver-etf-fof-direct-growth"
+    },
+    {
+      "scheme_id": "sbi-gold-fund-direct-growth",
+      "scheme_name": "SBI Gold Fund Direct Growth",
+      "url": "https://groww.in/mutual-funds/sbi-gold-fund-direct-growth"
+    },
+    {
+      "scheme_id": "hdfc-mid-cap-fund-direct-growth",
+      "scheme_name": "HDFC Mid Cap Fund Direct Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth"
+    },
+    {
+      "scheme_id": "bandhan-small-cap-fund-direct-growth",
+      "scheme_name": "Bandhan Small Cap Fund Direct Growth",
+      "url": "https://groww.in/mutual-funds/bandhan-small-cap-fund-direct-growth"
+    }
+  ],
+  "help_pages": [
+    {
+      "id": "groww-help",
+      "name": "Groww Help & Support",
+      "url": "https://groww.in/help"
+    }
+  ],
+  "educational_links": {
+    "no_advice": "https://groww.in/blog/category/mutual-funds",
+    "factsheet_note": "Use scheme page URL as factsheet link per scheme."
+  }
+}

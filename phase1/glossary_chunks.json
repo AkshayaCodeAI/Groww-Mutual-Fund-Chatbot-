@@ -1,0 +1,92 @@
+[
+  {
+    "topic": "nav_meaning",
+    "title": "NAV meaning",
+    "text": "NAV (Net Asset Value) is the price per unit of a mutual fund scheme. It is calculated by dividing the total value of the scheme's assets minus liabilities by the number of units outstanding. NAV is declared every business day.",
+    "content_type": "glossary",
+    "source_url": "https://groww.in/mutual-funds",
+    "last_updated": "2026-03-08",
+    "scheme_id": null,
+    "scheme_name": null
+  },
+  {
+    "topic": "riskometer_meaning",
+    "title": "Riskometer meaning",
+    "text": "Riskometer is a visual risk indicator prescribed by SEBI for mutual fund schemes. It shows the level of risk associated with a scheme (e.g. Low, Moderate, Moderately High, High, Very High) to help investors understand the risk before investing.",
+    "content_type": "glossary",
+    "source_url": "https://groww.in/mutual-funds",
+    "last_updated": "2026-03-08",
+    "scheme_id": null,
+    "scheme_name": null
+  },
+  {
+    "topic": "annualised_returns",
+    "title": "Annualised returns",
+    "text": "Annualised returns are the average of the yearly returns of a mutual fund over a given period. They help compare performance across different time horizons.",
+    "content_type": "glossary",
+    "source_url": "https://groww.in/mutual-funds",
+    "last_updated": "2026-03-08",
+    "scheme_id": null,
+    "scheme_name": null
+  },
+  {
+    "topic": "absolute_returns",
+    "title": "Absolute returns",
+    "text": "Absolute returns are the total return of a mutual fund over a given period. They show the actual gain or loss over that period without annualising.",
+    "content_type": "glossary",
+    "source_url": "https://groww.in/mutual-funds",
+    "last_updated": "2026-03-08",
+    "scheme_id": null,
+    "scheme_name": null
+  },
+  {
+    "topic": "expense_ratio",
+    "title": "Expense ratio",
+    "text": "Expense ratio is a fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a scheme's fund assets used for administrative, management, advertising, and other expenses.",
+    "content_type": "glossary",
+    "source_url": "https://groww.in/mutual-funds",
+    "last_updated": "2026-03-08",
+    "scheme_id": null,
+    "scheme_name": null
+  },
+  {
+    "topic": "exit_load",
+    "title": "Exit load",
+    "text": "Exit load is a fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment. It is deducted from the redemption amount.",
+    "content_type": "glossary",
+    "source_url": "https://groww.in/mutual-funds",
+    "last_updated": "2026-03-08",
+    "scheme_id": null,
+    "scheme_name": null
+  },
+  {
+    "topic": "stamp_duty",
+    "title": "Stamp duty",
+    "text": "Stamp duty is a form of tax payable for the purchase or sale of an asset or security. For mutual funds in India, stamp duty may apply as per applicable regulations (e.g. from July 1, 2020).",
+    "content_type": "glossary",
+    "source_url": "https://groww.in/mutual-funds",
+    "last_updated": "2026-03-08",
+    "scheme_id": null,
+    "scheme_name": null
+  },
+  {
+    "topic": "tax_ltcg_stcg",
+    "title": "Tax (LTCG and STCG)",
+    "text": "Tax is a percentage of your capital gains payable to the government upon exiting your mutual fund investments. Taxation is categorized as long-term capital gains (LTCG) and short-term capital gains (STCG) depending on your holding period and the type of fund (equity or debt).",
+    "content_type": "glossary",
+    "source_url": "https://groww.in/mutual-funds",
+    "last_updated": "2026-03-08",
+    "scheme_id": null,
+    "scheme_name": null
+  },
+  {
+    "topic": "min_sip",
+    "title": "Minimum SIP",
+    "text": "Minimum SIP (Systematic Investment Plan) is the smallest amount in rupees (₹) you can invest in a mutual fund scheme at regular intervals (e.g. monthly). Each scheme sets its own minimum SIP; it varies by scheme. To see the exact minimum SIP for a scheme, ask for that scheme by name (e.g. Minimum SIP for SBI Gold Fund?).",
+    "content_type": "glossary",
+    "source_url": "https://groww.in/mutual-funds",
+    "last_updated": "2026-03-08",
+    "scheme_id": null,
+    "scheme_name": null
+  }
+]

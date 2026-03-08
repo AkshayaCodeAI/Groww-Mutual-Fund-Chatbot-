@@ -1,0 +1,11 @@
+# Phase 5: Streamlit app (required for deploy)
+streamlit>=1.28.0
+
+# Phase 2: Ingestion (needed if app builds chunks on first run)
+httpx>=0.25.0
+beautifulsoup4>=4.12.0
+
+# Phase 4: API (only if running backend separately)
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.0.0

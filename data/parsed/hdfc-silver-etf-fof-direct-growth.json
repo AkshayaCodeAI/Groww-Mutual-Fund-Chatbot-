@@ -1,0 +1,83 @@
+{
+  "scheme_id": "hdfc-silver-etf-fof-direct-growth",
+  "scheme_name": "HDFC Silver ETF FoF Direct Growth",
+  "source_url": "https://groww.in/mutual-funds/hdfc-silver-etf-fof-direct-growth",
+  "last_updated": "2026-03-08",
+  "type": "Direct",
+  "expense_ratio": "0.23%",
+  "exit_load": "Exit load of 1% if redeemed within 15 days.",
+  "min_sip": "₹100",
+  "min_lumpsum": "₹100",
+  "lock_in_period": "3 years (ELSS lock-in)",
+  "benchmark": "Domestic Price of Silver Scheme Information Document(SID) Fund house HDFC Mutual Fund Rank (total assets) #2 in India Total AUM ₹9,37,232.21 Cr Date of Incorporation 10 Dec 1999 Phone 022 – 66316333 E",
+  "risk": "Very High risk",
+  "fund_manager": [
+    "Arun Agarwal",
+    "Nandita Menezes"
+  ],
+  "launch_date": "10 Dec 1999",
+  "category": "Commodities Silver",
+  "scheme_type": null,
+  "asset_allocation": "Equity/Debt/Others as per holdings table. Top holdings: 3 months +5.83%; 6 months +34.24%; 1 year +86.53%; 3 years +172.07%; HDFC Silver ETF Regular - Growth 101.03%",
+  "top_holdings": [
+    {
+      "name": "3 months",
+      "assets": "+5.83%",
+      "sector": "₹15,000"
+    },
+    {
+      "name": "6 months",
+      "assets": "+34.24%",
+      "sector": "₹30,000"
+    },
+    {
+      "name": "1 year",
+      "assets": "+86.53%",
+      "sector": "₹60,000"
+    },
+    {
+      "name": "3 years",
+      "assets": "+172.07%",
+      "sector": "₹1,80,000"
+    },
+    {
+      "name": "HDFC Silver ETF Regular - Growth",
+      "assets": "101.03%",
+      "sector": "--"
+    },
+    {
+      "name": "Fund returns",
+      "assets": "+105.9%",
+      "sector": "+105.9%"
+    },
+    {
+      "name": "Category average (Commodities Silver)",
+      "assets": "+115.7%",
+      "sector": "+115.7%"
+    }
+  ],
+  "return_1y": null,
+  "return_3y": null,
+  "return_5y": null,
+  "elss_tax_benefit": "ELSS schemes qualify for deduction under Section 80C up to ₹1.5 lakh and have a 3-year lock-in.",
+  "ltcg_tax_rule": "If you redeem within two years, returns are taxed as per your Income Tax slab. If you redeem after two years, returns are taxed at 12.5%. Check past data Fund management AA Arun Agarwal Feb 2023 - Present View details Education Mr. Agarwal is a B.Com. and Chartered Accountant Experience Prior to joi",
+  "stcg_tax_rule": "If you redeem within two years, returns are taxed as per your Income Tax slab.",
+  "tax_implication": "If you redeem within two years, returns are taxed as per your Income Tax slab. If you redeem after two years, returns are taxed at 12.5%. Check past data Fund management AA Arun Agarwal Feb 2023 - Present View details Education Mr. Agarwal is a B.Com. and Chartered Accountant Experience Prior to joining HDFC Asset Management Company Limited, he has worked with SBI Funds Management Pvt. Ltd., ICICI Bank Limited, UTI Asset Management Pvt. Ltd. Also manages these schemes HDFC BSE India Sector Leade",
+  "stamp_duty": "Stamp duty on investment: 0.005% (from July 1st, 2020",
+  "fund_house": "Mutual Funds by GrowwMutual funds by Groww designed for your investment goals",
+  "fund_house_url": "https://groww.in/mutual-funds/amc/groww-mutual-funds",
+  "about_scheme": "Pricing Blog Media & Press Careers Help & Support Trust & Safety Investor Relations",
+  "investment_objective": "The scheme is seek to capital appreciation by investing in units of HDFC Silver ETF (HSETF). Fund benchmark Domestic Price of Silver Scheme Information Document(SID) Fund house HDFC Mutual Fund Rank (total assets) #2 in India Total AUM ₹9,37,232.21 Cr Date of Incorporation 10 Dec 1999 Phone 022 – 66316333 E-mail [email protected] Website http://www.hdfcfund.com Launch Date 10 Dec 1999 Address \"HDFC House\", 2nd Floor, H. T. Parekh Marg, 165-166, BackbayReclamation, Churchgate Mumbai 400020 Custod",
+  "min_1st_investment": "₹100",
+  "min_2nd_investment": "₹100",
+  "one_time_sip": "One time",
+  "holding_analysis": "Holdings: 7 positions. 3 months +5.83%; 6 months +34.24%; 1 year +86.53%; 3 years +172.07%; HDFC Silver ETF Regular - Growth 101.03%; Fund returns +105.9%; Category average (Commodities Silver) +115.7%",
+  "advanced_ratios": "Alpha 50 Index Fund SBI Quant Mirae Asset DSP Baroda BNP Paribas Mahindra Manulife Sundaram Samco Taurus Mutual Fund Houses Best Hybrid Mutual funds Best ELSS Mutual funds Best Dividend Yield Mutual f",
+  "annualised_returns_definition": "Average of the yearly returns of a mutual fund over a given period.",
+  "absolute_returns_definition": "The total return of a mutual fund over a given period.",
+  "expense_ratio_definition": "A fee payable to a mutual fund house for managing your mutual fund investments.",
+  "exit_load_definition": "A fee payable to a mutual fund house for exiting a fund before the completion of a specified period.",
+  "stamp_duty_definition": "A form of tax payable for the purchase or sale of an asset or security.",
+  "tax_definition": "Tax on capital gains (LTCG/STCG) depending on holding period and fund type.",
+  "faqs": []
+}
