@@ -38,11 +38,11 @@ def inject_custom_css():
     """Chatbot-style UI: chat bubbles, spacing, modern look."""
     st.markdown("""
     <style>
-    /* Chatbot container: centered, readable width */
+    /* Chatbot container: centered, readable width; extra bottom space so "Ask a question" bar stays above Streamlit footer */
     .block-container {
         max-width: 36rem;
         padding-top: 1rem;
-        padding-bottom: 6rem;
+        padding-bottom: 10rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -185,19 +185,26 @@ def inject_custom_css():
     .answer-block {
         padding: 0.75rem 0;
     }
-    /* Disclaimer below chat input (fixed at bottom, after "Ask a question" bar) */
+    /* Hide Streamlit's "Manage app" footer so it doesn't overlap the chat input */
+    footer { visibility: hidden !important; }
+    /* Optional: hide the footer's space so layout is clean (some Streamlit versions) */
+    [data-testid="stFooter"] { display: none !important; }
+    /* Disclaimer at bottom */
     .disclaimer-below-chat {
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
         text-align: center;
-        padding: 8px 16px;
+        padding: 6px 16px;
         font-size: 0.8rem;
         color: #666;
         background: #fafafa;
         border-top: 1px solid #e8e8e8;
         z-index: 999;
+    }
+    [data-testid="stChatInput"] {
+        margin-bottom: 0.5rem !important;
     }
     [data-theme="dark"] .disclaimer-below-chat,
     [data-theme="Dark"] .disclaimer-below-chat {
