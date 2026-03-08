@@ -374,8 +374,6 @@ def main():
         st.session_state.messages = []
     if "last_scheme_id" not in st.session_state:
         st.session_state.last_scheme_id = None
-    if "scroll_to_latest" not in st.session_state:
-        st.session_state.scroll_to_latest = False
 
     st.markdown("**Suggested questions**")
     example_queries = [
@@ -441,7 +439,6 @@ def main():
             if sid:
                 st.session_state.last_scheme_id = sid
         del st.session_state["last_query"]
-        st.session_state.scroll_to_latest = True
 
     # Render full chat history in the chat area
     messages = st.session_state.messages
@@ -477,32 +474,6 @@ def main():
                     st.caption(f"Last updated from sources: {lu}")
                 if msg.get("refused"):
                     st.caption("Facts only; no investment advice.")
-
-    # Anchor so we can scroll to the latest question/answer after user asks
-    st.markdown('<div id="chat-latest" data-scroll-anchor></div>', unsafe_allow_html=True)
-
-    # Scroll to latest message when user has just asked a question
-    if st.session_state.get("scroll_to_latest") and messages:
-        st.session_state.scroll_to_latest = False
-        try:
-            import streamlit.components.v1 as components
-            components.html(
-                """
-                <script>
-                (function() {
-                    try {
-                        var doc = window.parent.document;
-                        var el = doc.getElementById('chat-latest');
-                        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    } catch (e) {}
-                })();
-                </script>
-                """,
-                height=0,
-                scrolling=False,
-            )
-        except Exception:
-            pass
 
     # Disclaimer fixed below the "Ask a question" chat input
     st.markdown(
