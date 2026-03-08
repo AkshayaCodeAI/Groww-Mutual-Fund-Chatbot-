@@ -19,6 +19,7 @@ from phase3.config.prompts import (
     COMPARISON_REFUSAL_TRIGGERS,
     COMPARISON_REFUSAL_MESSAGE,
     RETURNS_REFUSAL_TEMPLATE,
+    THANKYOU_MESSAGE,
 )
 
 
@@ -31,6 +32,15 @@ def is_comparison_query(query: str) -> bool:
     """Refuse requests for comparison of schemes (e.g. 'comparison of all schemes')."""
     q = query.lower().strip()
     return any(t in q for t in COMPARISON_REFUSAL_TRIGGERS)
+
+
+def is_thankyou_query(query: str) -> bool:
+    """True if the user is saying thanks (polite reply only, no citation)."""
+    q = query.lower().strip()
+    if not q or len(q) > 60:
+        return False
+    thanks = ("thank you", "thankyou", "thanks", "thank u", "thx", "ty ")
+    return any(t in q for t in thanks) or q in ("ty", "thanks")
 
 
 def is_returns_comparison(query: str) -> bool:
@@ -80,6 +90,14 @@ def generate_answer(
             "citation_url": EDUCATIONAL_LINK,
             "last_updated": last_updated or "N/A",
             "refused": True,
+        }
+
+    if is_thankyou_query(query):
+        return {
+            "answer": THANKYOU_MESSAGE,
+            "citation_url": "",
+            "last_updated": "",
+            "refused": False,
         }
 
     if is_returns_comparison(query) and citation_url:

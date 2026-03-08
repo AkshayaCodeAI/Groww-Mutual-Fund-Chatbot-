@@ -92,9 +92,19 @@ def build_chunks_for_scheme(data: dict) -> list[dict]:
         val = data.get(key)
         c = _chunk(scheme_id, scheme_name, source_url, last_updated, key, val)
         if c:
-            if key in ("expense_ratio", "min_sip", "min_lumpsum", "exit_load"):
-                label = {"min_sip": "Minimum SIP", "min_lumpsum": "Minimum lump sum", "expense_ratio": "Expense ratio", "exit_load": "Exit load"}.get(key, key.replace("_", " ").title())
+            if key in ("expense_ratio", "min_sip", "min_lumpsum", "exit_load", "min_1st_investment", "min_2nd_investment"):
+                label = {
+                    "min_sip": "Minimum SIP",
+                    "min_lumpsum": "Minimum lump sum",
+                    "expense_ratio": "Expense ratio",
+                    "exit_load": "Exit load",
+                    "min_1st_investment": "Minimum one-time investment",
+                    "min_2nd_investment": "Minimum for 2nd investment",
+                }.get(key, key.replace("_", " ").title())
                 c["text"] = f"{label}: {c['text']}"
+            elif key == "one_time_sip":
+                # "One time" alone is vague; prefer min_1st_investment for "min one time sip". Keep short label.
+                c["text"] = f"One-time SIP: {c['text']}"
             chunks.append(c)
     holdings = data.get("top_holdings") or []
     if holdings:

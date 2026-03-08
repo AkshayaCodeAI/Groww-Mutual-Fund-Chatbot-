@@ -45,3 +45,6 @@ COMPARISON_REFUSAL_MESSAGE = (
 
 # When user asks for returns/performance comparison
 RETURNS_REFUSAL_TEMPLATE = "We don't compute or compare returns here. For official performance data, please check the scheme factsheet: {citation_url}"
+
+# Polite reply when user says thanks — no citation, nothing else
+THANKYOU_MESSAGE = "You're welcome! Happy to help. Feel free to ask if you have any more questions."
