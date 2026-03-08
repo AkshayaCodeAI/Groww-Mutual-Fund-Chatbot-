@@ -100,9 +100,17 @@ Then run the app as above.
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) and [phase6/DEPLOYMENT.md](phase6/DEPLOYMENT.md) for details.
 
+## URLs Used
+https://groww.in/mutual-funds/hdfc-silver-etf-fof-direct-growth
+https://groww.in/mutual-funds/sbi-gold-fund-direct-growth
+https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth
+https://groww.in/mutual-funds/bandhan-small-cap-fund-direct-growth
+
+## Disclaimer Snippet
+
 <img width="902" height="814" alt="Screenshot 2026-03-08 at 7 18 55 PM" src="https://github.com/user-attachments/assets/fc363cc9-e297-429b-bbdf-17c979fe6cf9" />
 
-Question Asked 
+## Question Asked 
 
 What is the investment objective of HDFC Silver ETF FoF Direct Growth?
 
