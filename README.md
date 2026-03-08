@@ -40,7 +40,7 @@ On Windows: `run.bat`
 1. Push this repo to **GitHub**.
 2. Go to **[share.streamlit.io](https://share.streamlit.io)** → **New app**.
 3. Set **Main file path** to `phase5/streamlit_app.py`.
-4. (Optional) In **Settings → Secrets**, add `XAI_API_KEY` and/or `CHAT_API_URL`.
+4. (Optional) In **Settings → Secrets**, add `GROQ_API_KEY` (or `XAI_API_KEY`) and/or `CHAT_API_URL`.
 5. Click **Deploy**.
 
 See **phase6/DEPLOYMENT.md** for full steps and Docker.

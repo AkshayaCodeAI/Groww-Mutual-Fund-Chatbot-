@@ -1,6 +1,6 @@
 # Deployment (Phase 6) — Streamlit
 
-Deploy the **FundWise** Groww MF FAQ Chatbot with **Streamlit** (e.g. Streamlit Community Cloud).
+Deploy the **Groww** MF FAQ Chatbot with **Streamlit** (e.g. Streamlit Community Cloud).
 
 ---
 
@@ -27,12 +27,15 @@ In the app’s **Settings → Secrets**, add:
 # Optional: Backend API URL (if you deploy Phase 4 separately)
 CHAT_API_URL = "https://your-api.example.com"
 
-# Optional: xAI Grok API key for LLM-based answers
-XAI_API_KEY = "gsk_your_key_here"
+# Optional: Groq API key for LLM-based answers (preferred)
+GROQ_API_KEY = "gsk_your_groq_key_here"
+
+# Optional: xAI Grok API key (used if GROQ_API_KEY is not set)
+XAI_API_KEY = "gsk_your_xai_key_here"
 ```
 
 - If you don’t set `CHAT_API_URL`, the app uses **in-process RAG** (Phase 3).  
-- If you don’t set `XAI_API_KEY`, answers use the first retrieved chunk (no LLM call).
+- If you set `GROQ_API_KEY`, the app uses **Groq** (Llama) for answers; else if `XAI_API_KEY` is set, **Grok** is used. If neither is set, answers use the first retrieved chunk (no LLM).
 
 ### 4. Deploy
 
@@ -82,7 +85,8 @@ Or use the script:
 | Variable | Description | Default |
 |----------|-------------|---------|
 | `CHAT_API_URL` | Phase 4 API base URL | `http://localhost:8000` |
-| `XAI_API_KEY` | xAI Grok API key for LLM answers | not set (chunk-only answers) |
+| `GROQ_API_KEY` | Groq API key for LLM answers (preferred) | not set |
+| `XAI_API_KEY` | xAI Grok API key for LLM answers | not set (chunk-only if neither set) |
 
 ---
 
@@ -101,8 +105,8 @@ CMD ["streamlit", "run", "phase5/streamlit_app.py", "--server.port=8501", "--ser
 ```
 
 ```bash
-docker build -t fundwise .
-docker run -p 8501:8501 -e XAI_API_KEY=your_key fundwise
+docker build -t groww .
+docker run -p 8501:8501 -e GROQ_API_KEY=your_key groww
 ```
 
 ---
@@ -112,4 +116,4 @@ docker run -p 8501:8501 -e XAI_API_KEY=your_key fundwise
 - [ ] Repo is on GitHub.
 - [ ] `requirements.txt` and `.streamlit/config.toml` are in the repo.
 - [ ] Either `data/chunks/all_chunks.jsonl` is committed, or `data/parsed/*.json` + phase1 glossary/howto exist so the app can build chunks on first run.
-- [ ] Secrets (e.g. `XAI_API_KEY`, `CHAT_API_URL`) set in Streamlit Cloud if you use them.
+- [ ] Secrets (e.g. `GROQ_API_KEY`, `XAI_API_KEY`, `CHAT_API_URL`) set in Streamlit Cloud if you use them.

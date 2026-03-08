@@ -16,17 +16,27 @@ CHUNKS_PATH = DATA_DIR / "chunks" / "all_chunks.jsonl"
 # Query phrases -> chunk field (for boosting the right chunk for specific questions)
 FIELD_HINTS = [
     ("expense ratio", "expense_ratio"),
+    ("expense of", "expense_ratio"),
+    ("expense for", "expense_ratio"),
+    ("expense", "expense_ratio"),
     ("exit load", "exit_load"),
     ("minimum sip", "min_sip"),
     ("min sip", "min_sip"),
+    ("sip for", "min_sip"),
+    ("sip of", "min_sip"),
+    ("sip amount", "min_sip"),
     ("minimum lump", "min_lumpsum"),
     ("min lump", "min_lumpsum"),
     ("lumpsum", "min_lumpsum"),
+    ("lump sum", "min_lumpsum"),
     ("riskometer", "riskometer_meaning"),
     ("level of risk", "risk"),
     ("risk associated", "risk"),
     ("risk is", "risk"),
     ("risk level", "risk"),
+    ("risk for", "risk"),
+    ("risk of", "risk"),
+    ("risk", "risk"),
     ("nav", "nav_meaning"),
     ("net asset value", "nav_meaning"),
     ("lock in", "lock_in_period"),
@@ -52,12 +62,14 @@ FIELD_HINTS = [
 ]
 
 
-def load_chunks() -> list[dict]:
-    """Load all chunks from JSONL. Include glossary (already merged by phase2)."""
+def load_chunks(chunks_path: Path | str | None = None) -> list[dict]:
+    """Load all chunks from JSONL. Include glossary (already merged by phase2).
+    If chunks_path is provided, load from that file (for Streamlit/deploy when cwd may differ)."""
+    path = Path(chunks_path) if chunks_path else CHUNKS_PATH
     chunks = []
-    if not CHUNKS_PATH.exists():
+    if not path.exists():
         return chunks
-    with open(CHUNKS_PATH, encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if line:

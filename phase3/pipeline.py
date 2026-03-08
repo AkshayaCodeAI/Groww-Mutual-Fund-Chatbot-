@@ -1,7 +1,7 @@
 """
 Phase 3.3: Pipeline — Single entry: query → retrieve → generate → answer + citation + last_updated.
 Detects scheme from query (e.g. "HDFC Silver ETF") and prefers that scheme's chunks.
-When XAI_API_KEY is set in .env, uses Grok LLM for answer generation.
+When GROQ_API_KEY or XAI_API_KEY is set in .env, uses that LLM (Groq preferred) for answer generation.
 """
 
 import json
@@ -93,23 +93,32 @@ def run_pipeline(
     top_k: int = 5,
     scheme_id: str | None = None,
     llm_call=None,
+    chunks_path: str | Path | None = None,
 ) -> dict:
     """
     Run full RAG pipeline. Returns { "answer", "citation_url", "last_updated", "refused" }.
     If scheme_id is None, tries to detect from query (e.g. "HDFC Silver ETF FoF").
-    If XAI_API_KEY is set and llm_call is None, uses Grok LLM for answer generation.
+    If GROQ_API_KEY is set, uses Groq (Llama); else if XAI_API_KEY is set, uses Grok. Otherwise chunk-only.
+    chunks_path: optional path to all_chunks.jsonl (used by Streamlit so chunks are found regardless of cwd).
     """
     if scheme_id is None:
         scheme_id = detect_scheme_id(query)
     scheme_info = get_scheme_info(scheme_id)
-    chunks = load_chunks()
+    chunks = load_chunks(chunks_path)
     retrieved = retrieve(query, chunks=chunks, top_k=top_k, scheme_id=scheme_id)
-    if llm_call is None and os.environ.get("XAI_API_KEY"):
-        try:
-            from phase3.llm_grok import make_llm_call
-            llm_call = make_llm_call()
-        except Exception:
-            pass
+    if llm_call is None:
+        if os.environ.get("GROQ_API_KEY"):
+            try:
+                from phase3.llm_groq import make_llm_call
+                llm_call = make_llm_call()
+            except Exception:
+                pass
+        if llm_call is None and os.environ.get("XAI_API_KEY"):
+            try:
+                from phase3.llm_grok import make_llm_call
+                llm_call = make_llm_call()
+            except Exception:
+                pass
     return generate_answer(
         query,
         retrieved,

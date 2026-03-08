@@ -14,4 +14,4 @@ python3 -m phase2.chunk
 echo "=== Starting Streamlit app ==="
 echo "Open http://localhost:8501 in your browser."
 echo "Press Ctrl+C to stop."
-exec streamlit run phase5/streamlit_app.py --server.port 8501 --server.headless true
+exec python3 -m streamlit run phase5/streamlit_app.py --server.port 8501 --server.headless true

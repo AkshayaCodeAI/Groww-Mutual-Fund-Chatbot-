@@ -105,21 +105,25 @@ def generate_answer(
             "refused": False,
         }
 
-    context = format_context(retrieved)
-    user_prompt = f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer in at most 3 sentences, using only the context. No investment advice."
-
+    chunk_text = (retrieved[0].get("text") or "").strip()
+    # When LLM (e.g. Groq) is provided, use it to answer from context; fall back to scraped chunk text.
     if llm_call:
-        answer = llm_call(system=SYSTEM_PROMPT, user=user_prompt)
+        context = format_context(retrieved)
+        user_prompt = f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer in at most 3 sentences, using only the context. No investment advice."
+        answer = (llm_call(system=SYSTEM_PROMPT, user=user_prompt) or "").strip()
+        if not answer or len(answer) < 10:
+            answer = chunk_text
     else:
-        answer = (retrieved[0].get("text") or "").strip()
-        if not answer:
-            answer = "This information was not found in our sources."
-        # Keep to ~3 sentences (split on period+space so decimals like 0.23% stay intact)
+        answer = chunk_text
+    if not answer:
+        answer = "This information was not found in our sources."
+    # For long text, keep at most 3 sentences (split on ". " so decimals like 0.23% stay intact)
+    if len(answer) > 300:
         sentences = answer.replace("..", ".").split(". ")
         sentences = [s.strip().rstrip(".") for s in sentences if s.strip()][:3]
         answer = ". ".join(sentences)
-        if answer and not answer.endswith("."):
-            answer += "."
+    if answer and not answer.endswith("."):
+        answer += "."
 
     # If user asked about a specific scheme but we only have a generic chunk, add scheme link
     top_is_generic = retrieved and not retrieved[0].get("scheme_id")
@@ -133,9 +137,16 @@ def generate_answer(
     if not (citation_url or "").strip():
         citation_url = EDUCATIONAL_LINK
 
+    # Never return empty answer when we have retrieved data — always show scraped content or fallback
+    answer = (answer or "").strip()
+    if not answer and chunk_text:
+        answer = chunk_text
+    if not answer:
+        answer = "This information was not found in our sources."
+
     return {
-        "answer": answer.strip(),
-        "citation_url": citation_url.strip(),
+        "answer": answer,
+        "citation_url": (citation_url or "").strip(),
         "last_updated": last_updated or "N/A",
         "refused": False,
     }

@@ -16,7 +16,9 @@ if str(ROOT) not in sys.path:
 import html
 import streamlit as st
 
-CHAT_API_URL = os.environ.get("CHAT_API_URL", "http://localhost:8000")
+CHAT_API_URL = os.environ.get("CHAT_API_URL", "").strip()
+# When no API URL or localhost, use in-process RAG so the bot answers without waiting for API timeout
+USE_API = bool(CHAT_API_URL and "localhost" not in CHAT_API_URL.lower() and "127.0.0.1" not in CHAT_API_URL)
 CHUNKS_PATH = ROOT / "data" / "chunks" / "all_chunks.jsonl"
 
 
@@ -52,21 +54,25 @@ def inject_custom_css():
         padding: 0.5rem 0;
         display: flex;
         align-items: flex-start;
+        width: 100%;
     }
-    /* Bot (assistant) on the left */
+    /* Bot (assistant) on the left: avatar left, message right of avatar */
     div[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {
         flex-direction: row;
         justify-content: flex-start;
+        align-self: flex-start;
         background: #fafafa !important;
         border-radius: 1rem;
         border: 1px solid #e0e0e0;
         padding: 0.75rem 1rem;
         margin: 0.5rem 0 0.5rem 0;
+        max-width: 85%;
     }
-    /* User on the right */
+    /* User on the right: whole block pushed right, avatar left of bubble */
     div[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) {
-        flex-direction: row-reverse;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-self: flex-end;
         margin-left: auto;
         max-width: 85%;
     }
@@ -81,25 +87,27 @@ def inject_custom_css():
         font-size: 1rem;
         line-height: 1.5;
     }
-    /* Improved icons: circular, softer colors */
+    /* Avatars: circular, Groww-style */
     [data-testid="stChatMessage"] [data-testid="chatAvatarIcon-user"],
     [data-testid="stChatMessage"] [data-testid="chatAvatarIcon-assistant"] {
         border-radius: 50% !important;
         overflow: hidden;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        box-shadow: 0 2px 6px rgba(106, 125, 223, 0.25);
         flex-shrink: 0;
+        min-width: 2.25rem !important;
+        min-height: 2.25rem !important;
     }
-    /* User icon: soft blue/teal (not red) */
+    /* User icon: Groww blue */
     [data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) [data-testid="chatAvatarIcon-user"] {
-        background: linear-gradient(135deg, #4fc3f7 0%, #29b6f6 100%) !important;
+        background: #6A7DDF !important;
     }
     [data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) [data-testid="chatAvatarIcon-user"] svg,
     [data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) [data-testid="chatAvatarIcon-user"] img {
         filter: brightness(0) invert(1);
     }
-    /* Bot icon: soft indigo/blue */
+    /* Bot icon: Groww gradient (blue top, mint green bottom) */
     [data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) [data-testid="chatAvatarIcon-assistant"] {
-        background: linear-gradient(135deg, #7986cb 0%, #5c6bc0 100%) !important;
+        background: linear-gradient(180deg, #6A7DDF 0%, #6AEBAF 100%) !important;
     }
     [data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) [data-testid="chatAvatarIcon-assistant"] svg,
     [data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) [data-testid="chatAvatarIcon-assistant"] img {
@@ -150,6 +158,26 @@ def inject_custom_css():
     /* Spacing for answer block */
     .answer-block {
         padding: 0.75rem 0;
+    }
+    /* Disclaimer below chat input (fixed at bottom, after "Ask a question" bar) */
+    .disclaimer-below-chat {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 8px 16px;
+        font-size: 0.8rem;
+        color: #666;
+        background: #fafafa;
+        border-top: 1px solid #e8e8e8;
+        z-index: 999;
+    }
+    [data-theme="dark"] .disclaimer-below-chat,
+    [data-theme="Dark"] .disclaimer-below-chat {
+        background: #1e3a5f;
+        border-top-color: #1565c0;
+        color: #b0b0b0;
     }
 
     /* ========== Dark mode: dark blue bubbles for questions and answers ========== */
@@ -227,6 +255,8 @@ def _query_uses_pronoun_for_scheme(query: str) -> bool:
 
 def call_api(query: str, scheme_id: str | None = None) -> dict | None:
     """Call Phase 4 API. Returns None on failure. scheme_id used for pronoun resolution."""
+    if not CHAT_API_URL:
+        return None
     try:
         import urllib.request
         import json
@@ -234,7 +264,7 @@ def call_api(query: str, scheme_id: str | None = None) -> dict | None:
         if scheme_id:
             body["scheme_id"] = scheme_id
         req = urllib.request.Request(
-            f"{CHAT_API_URL}/chat",
+            f"{CHAT_API_URL.rstrip('/')}/chat",
             data=json.dumps(body).encode("utf-8"),
             headers={"Content-Type": "application/json"},
             method="POST",
@@ -246,10 +276,10 @@ def call_api(query: str, scheme_id: str | None = None) -> dict | None:
 
 
 def run_rag_in_process(query: str, scheme_id: str | None = None) -> dict:
-    """Fallback: run Phase 3 RAG pipeline in-process (no API). scheme_id for pronoun resolution."""
+    """Run Phase 3 RAG pipeline in-process. Pass explicit chunks path so chunks are found regardless of cwd."""
     try:
         from phase3.pipeline import run_pipeline
-        return run_pipeline(query, scheme_id=scheme_id)
+        return run_pipeline(query, scheme_id=scheme_id, chunks_path=str(CHUNKS_PATH))
     except ImportError:
         return {
             "answer": "RAG pipeline not available (Phase 3). Start the API or run phase2 chunk + phase3 in this repo.",
@@ -268,7 +298,7 @@ def run_rag_in_process(query: str, scheme_id: str | None = None) -> dict:
 
 def main():
     st.set_page_config(
-        page_title="FundWise",
+        page_title="Groww MF",
         page_icon="💬",
         layout="centered",
         initial_sidebar_state="collapsed",
@@ -276,12 +306,12 @@ def main():
     _ensure_chunks_exist()  # build chunks on first run if missing (deploy-ready)
     inject_custom_css()
 
-    st.title("FundWise")
+    st.title("Groww MF")
     st.caption("Your Groww mutual fund facts assistant.")
 
     welcome = (
-        "Hi! I'm **FundWise**. Ask me anything about these mutual fund schemes—"
-        "expense ratios, minimum SIP, riskometer, and more. I share facts only, no investment advice."
+        "Hi! I'm **Groww MF**. Ask me anything about these mutual fund schemes—"
+        "expense ratios, minimum SIP, riskometer, and more."
     )
     st.info(welcome)
 
@@ -313,14 +343,35 @@ def main():
             use_scheme_id = st.session_state.last_scheme_id
         # Append user message to chat history
         st.session_state.messages.append({"role": "user", "content": q})
-        # Get response and append assistant message
-        with st.spinner("Getting answer..."):
-            result = call_api(q, scheme_id=use_scheme_id)
-            if result is None:
-                result = run_rag_in_process(q, scheme_id=use_scheme_id)
+        result = None
+        try:
+            with st.spinner("Getting answer..."):
+                if USE_API:
+                    result = call_api(q, scheme_id=use_scheme_id)
+                if result is None:
+                    result = run_rag_in_process(q, scheme_id=use_scheme_id)
+        except Exception as e:
+            result = {
+                "answer": f"Something went wrong while getting an answer. Please try again. ({e!s})",
+                "citation_url": "",
+                "last_updated": "",
+                "refused": False,
+            }
+        if result is None:
+            result = {
+                "answer": "Could not reach the answer service. Please try again.",
+                "citation_url": "",
+                "last_updated": "",
+                "refused": False,
+            }
+        answer = (result.get("answer") or "").strip()
+        if not answer and result.get("citation_url"):
+            answer = "See the source link below for details from our data."
+        if not answer:
+            answer = "No answer could be generated. Please try rephrasing your question or ask something like: 'What is Riskometer?' or 'Expense ratio of HDFC Silver ETF FoF?'"
         st.session_state.messages.append({
             "role": "assistant",
-            "answer": result.get("answer", ""),
+            "answer": answer,
             "citation_url": result.get("citation_url", ""),
             "last_updated": result.get("last_updated", ""),
             "refused": result.get("refused", False),
@@ -343,7 +394,12 @@ def main():
                 )
         else:
             with st.chat_message("assistant"):
-                st.markdown(msg.get("answer", ""))
+                answer_text = (msg.get("answer") or "").strip()
+                if not answer_text and msg.get("citation_url"):
+                    answer_text = "See the source link below for details from our data."
+                if not answer_text:
+                    answer_text = "No answer could be generated. Please try rephrasing your question."
+                st.markdown(answer_text)
                 url = msg.get("citation_url", "")
                 # One clear citation link in every answer
                 if url:
@@ -356,6 +412,12 @@ def main():
                     st.caption(f"Last updated from sources: {lu}")
                 if msg.get("refused"):
                     st.caption("Facts only; no investment advice.")
+
+    # Disclaimer fixed below the "Ask a question" chat input
+    st.markdown(
+        '<div class="disclaimer-below-chat">Facts only, no investment advice.</div>',
+        unsafe_allow_html=True,
+    )
 
 
 if __name__ == "__main__":
