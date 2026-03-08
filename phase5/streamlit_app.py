@@ -49,6 +49,20 @@ def inject_custom_css():
     @media (min-width: 640px) {
         .block-container { padding-left: 2rem; padding-right: 2rem; }
     }
+    /* Sticky header: Groww MF title, caption, welcome, and example buttons stay visible when scrolling */
+    .block-container > div:nth-child(-n+8) {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 100 !important;
+        background: #ffffff !important;
+        padding-bottom: 0.25rem !important;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.06) !important;
+    }
+    [data-theme="dark"] .block-container > div:nth-child(-n+8),
+    [data-theme="Dark"] .block-container > div:nth-child(-n+8) {
+        background: var(--background-color) !important;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.08) !important;
+    }
     /* Chat row: bot on left, user on right */
     [data-testid="stChatMessage"] {
         padding: 0.5rem 0;
@@ -345,6 +359,8 @@ def main():
         st.session_state.messages = []
     if "last_scheme_id" not in st.session_state:
         st.session_state.last_scheme_id = None
+    if "scroll_to_latest" not in st.session_state:
+        st.session_state.scroll_to_latest = False
 
     example_queries = [
         "Expense ratio of HDFC Silver ETF FoF?",
@@ -408,9 +424,11 @@ def main():
             if sid:
                 st.session_state.last_scheme_id = sid
         del st.session_state["last_query"]
+        st.session_state.scroll_to_latest = True
 
     # Render full chat history in the chat area
-    for msg in st.session_state.messages:
+    messages = st.session_state.messages
+    for idx, msg in enumerate(messages):
         if msg["role"] == "user":
             with st.chat_message("user"):
                 st.markdown(
@@ -437,6 +455,32 @@ def main():
                     st.caption(f"Last updated from sources: {lu}")
                 if msg.get("refused"):
                     st.caption("Facts only; no investment advice.")
+
+    # Anchor so we can scroll to the latest question/answer after user asks
+    st.markdown('<div id="chat-latest" data-scroll-anchor></div>', unsafe_allow_html=True)
+
+    # Scroll to latest message when user has just asked a question
+    if st.session_state.get("scroll_to_latest") and messages:
+        st.session_state.scroll_to_latest = False
+        try:
+            import streamlit.components.v1 as components
+            components.html(
+                """
+                <script>
+                (function() {
+                    try {
+                        var doc = window.parent.document;
+                        var el = doc.getElementById('chat-latest');
+                        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    } catch (e) {}
+                })();
+                </script>
+                """,
+                height=0,
+                scrolling=False,
+            )
+        except Exception:
+            pass
 
     # Disclaimer fixed below the "Ask a question" chat input
     st.markdown(
