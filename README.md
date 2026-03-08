@@ -88,7 +88,8 @@ Then run the app as above.
 | **phase5/** | Frontend (Streamlit) |
 | **phase6/** | Deployment notes |
 | **data/**   | Generated chunks (and raw/parsed if you scrape) |
-| **docs/**   | ARCHITECTURE.md |
+| **docs/**   | ARCHITECTURE.md |<img width="902" height="814" alt="Screenshot 2026-03-08 at 7 18 55 PM" src="https://github.com/user-attachments/assets/f46f0998-878b-4336-8d53-41dc915088b1" />
+
 
 ---
 
@@ -98,3 +99,20 @@ Then run the app as above.
 - **requirements.txt** – Python dependencies for all phases.
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) and [phase6/DEPLOYMENT.md](phase6/DEPLOYMENT.md) for details.
+
+<img width="902" height="814" alt="Screenshot 2026-03-08 at 7 18 55 PM" src="https://github.com/user-attachments/assets/fc363cc9-e297-429b-bbdf-17c979fe6cf9" />
+
+Question Asked 
+
+What is the investment objective of HDFC Silver ETF FoF Direct Growth?
+What are the latest NAV and 3-year returns of this fund?
+What level of risk is associated with this silver-based fund?
+What is the minimum SIP or lump-sum investment required?
+What assets does this fund primarily invest in?
+Who is the fund manager and what is the expense ratio of this scheme?
+
+
+
+
+
+
