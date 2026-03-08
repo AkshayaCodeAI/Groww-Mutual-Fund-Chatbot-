@@ -102,8 +102,11 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) and [phase6/DEPLOYMENT.md](phas
 
 ## URLs Used
 https://groww.in/mutual-funds/hdfc-silver-etf-fof-direct-growth
+
 https://groww.in/mutual-funds/sbi-gold-fund-direct-growth
+
 https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth
+
 https://groww.in/mutual-funds/bandhan-small-cap-fund-direct-growth
 
 ## Disclaimer Snippet
